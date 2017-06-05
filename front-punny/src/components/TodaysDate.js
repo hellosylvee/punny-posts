@@ -17,7 +17,7 @@ const TodaysDate = () => {
   today = mm+'/'+dd+'/'+yyyy;
 
   return(
-    <div>
+    <div className='date'>
       <h1>Pun of the Day</h1>
       {today}
     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AppContainer from './containers/AppContainer'
+import PunsContainer from './containers/PunsContainer'
 import './styles/App.css';
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <AppContainer />
+        <PunsContainer />
       </div>
     );
   }

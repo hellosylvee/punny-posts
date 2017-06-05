@@ -1,7 +1,24 @@
-.pun {
+.date {
   border: solid green 2px;
+}
+
+.nav {
+  border: solid purple 2px;
+  background-color: purple;
 }
 
 .gif {
   border: solid blue 2px;
+}
+
+.list {
+  border: solid orange 3px;
+}
+
+.list-item {
+  border: dotted purple 2px;
+}
+
+.form {
+  border: solid brown 2px;
 }
