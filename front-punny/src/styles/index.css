@@ -2,4 +2,5 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  border: dotted red 2px;
 }
