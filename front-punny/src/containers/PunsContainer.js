@@ -19,10 +19,7 @@ class PunsContainer extends Component {
 
   render(){
     return(
-      <div>
-        <PunsList puns={this.state.puns}/>
-        <Form onSubmit={this.handleSubmit.bind(this)}/>
-      </div>
+      <div/>
     )
   }
 }
