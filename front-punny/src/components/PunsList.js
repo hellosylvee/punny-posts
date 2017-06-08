@@ -6,6 +6,7 @@ const PunsList = (props) => {
 
   return(
     <div className='list'>
+      <h2>Puns List</h2>
       <Puns puns={props.puns}/>
     </div>
   )

@@ -41,11 +41,12 @@ class AppContainer extends Component {
     // console.log('what is this???', this.state)
     return(
       <div>
-        <DayPicker
+        {/* <DayPicker
           disabledDays={{ daysOfWeek: [0] }}
           selectedDays={this.state.selectedDay}
           onDayClick={this.handleDayClick}
-        />
+        /> */}
+        <TodaysDate />
         <GifList gifs={this.state.gifs} />
         <PunsList puns={this.state.puns}/>
         <Form onSubmit={this.handleSubmit.bind(this)}/>

@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar, NavItem } from 'react-materialize'
 
 const NavBar = () => {
   return(
-    <Navbar brand='logo' right>
-    	<Link to="/"><NavItem>Home</NavItem></Link>
-    	<Link to="/new"><NavItem>Upload</NavItem></Link>
-      <Link to="/categories"><NavItem>Categories</NavItem></Link>
-    </Navbar>
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/today">Today's Pun</Link></li>
+        <li><Link to="/new">Upload</Link></li>
+        <li><Link to="/signin">SignIn</Link></li>
+      </ul>
+    </div>
   )
 }
 

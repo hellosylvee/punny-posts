@@ -10,7 +10,17 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route path='/' component={AppContainer} />
+          <Route
+            exact path='/'
+            render={() => <h1>Welcome Home!</h1>} />
+          <Route
+            path='/today' component={AppContainer} />
+          <Route
+            path='/new'
+            render={() => <h1>This is where you will upload your giphy or image!</h1>} />
+          <Route
+            path='/signin'
+            render={() => <h1>Signin Page</h1>} />
         </Switch>
       </div>
     );
