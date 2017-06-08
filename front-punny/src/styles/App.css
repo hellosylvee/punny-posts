@@ -25,6 +25,16 @@
   margin-top: 50px;
 }
 
+.date-picker {
+  border: solid green 1px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
+span {
+  padding: 0px 20px;
+}
 /* make a long list of words, for scope */
 /* create container for api */

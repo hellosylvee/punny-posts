@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import AppContainer from './containers/AppContainer'
+import Topics from './components/home/Topics'
 import NavBar from './components/NavBar'
 import './styles/App.css';
 
@@ -11,8 +12,7 @@ class App extends Component {
         <NavBar />
         <Switch>
           <Route
-            exact path='/'
-            render={() => <h1>Welcome Home!</h1>} />
+            exact path='/' component={Topics} />
           <Route
             path='/today' component={AppContainer} />
           <Route
