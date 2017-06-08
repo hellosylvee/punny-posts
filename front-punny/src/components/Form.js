@@ -8,11 +8,24 @@ class Form extends Component {
     }
   }
 
+  handleInputChange(e){
+    this.setState({ input: e.target.value })
+  }
+
+  handleSubmit(e){
+    e.preventDefault()
+    this.props.onSubmit(this.state.input)
+    this.setState({ input: '' })
+  }
+
   render(){
     return(
-      <form className='form'>
+      <form className='form' onSubmit={this.handleSubmit.bind(this)}>
         <div>Enter a pun</div>
-        <textarea placeholder="Enter your pun here"></textarea>
+        <textarea
+          placeholder="Enter your pun here"
+          onChange={this.handleInputChange.bind(this)}>
+        </textarea>
         <button>Submit Pun</button>
       </form>
     )

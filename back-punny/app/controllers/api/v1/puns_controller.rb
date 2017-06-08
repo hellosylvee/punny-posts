@@ -4,7 +4,15 @@ class Api::V1::PunsController < ApplicationController
     render json: puns
   end
 
-  def new
-    pun = Pun.new
+  def create
+    pun = Pun.create(pun_params)
+    # byebug
+    render json: pun
+  end
+
+  private
+
+  def pun_params
+    params.require(:pun).permit(:pun, :user_id, :gif_id)
   end
 end

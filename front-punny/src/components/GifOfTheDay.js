@@ -3,9 +3,9 @@ import React from 'react'
 const GifOfTheDay = (props) => {
   let url = <img src={props.url} alt="gif here"/>
   return(
-    <li className='gif'>
+    <div className='gif'>
       {url}
-    </li>
+    </div>
   )
 }
 

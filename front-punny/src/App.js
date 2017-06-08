@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import AppContainer from './containers/AppContainer'
-import PunsContainer from './containers/PunsContainer'
 import NavBar from './components/NavBar'
-import TodaysDate from './components/TodaysDate'
 import './styles/App.css';
 
 class App extends Component {
@@ -10,12 +9,14 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <TodaysDate />
-        <AppContainer />
-        <PunsContainer />
+        <Switch>
+          <Route path='/' component={AppContainer} />
+        </Switch>
       </div>
     );
   }
 }
 
 export default App;
+
+//Display all of your routes here

@@ -5,7 +5,10 @@
   "dependencies": {
     "axios": "^0.16.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-day-picker": "^5.5.3",
+    "react-dom": "^15.5.4",
+    "react-materialize": "^1.0.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

@@ -7,9 +7,9 @@ const GifList = (props) => {
   let gifs = props.gifs.map(gif => <GifOfTheDay url={gif.images.fixed_height.url} key={gif.id} /> )
 
   return(
-    <ul className='gif'>
+    <div className='gif'>
       {gifs}
-    </ul>
+    </div>
   )
 }
 
