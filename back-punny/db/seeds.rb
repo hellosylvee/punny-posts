@@ -6,10 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 5.times do |n|
   user = User.create(
-    :username => Faker::Name.name,
+    :first_name => Faker::Name.first_name,
+    :last_name => Faker::Name.last_name,
+    :username => Faker::Team.creature + Faker::Number.number(2).to_s,
+    :blurb => Faker::Name.title,
     :password_digest => Faker::Team.creature
   )
 end
+
+s = User.create(first_name: 'sylvee', last_name: 'lee', username: 'hisyl', blurb: 'flatiron student', password_digest: 'monkey')
