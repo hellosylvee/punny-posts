@@ -3899,3 +3899,1350 @@ Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.8ms)
   [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" ORDER BY "puns"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" ORDER BY "puns"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 7], ["LIMIT", 11]]
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:13:34 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:13:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:13:43 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 120ms (Views: 75.6ms | ActiveRecord: 44.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:16:21 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (15.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 23ms (Views: 7.2ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:16:52 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 2.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:17:44 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:18:09 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:18:17 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (8.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 15ms (Views: 6.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:18:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (3.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:18:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:19:14 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:19:24 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 83ms (Views: 82.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:19:37 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"This is a punny pun."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 476ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:20:55 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:21:01 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:21:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:21:08 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Is this working?"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:21:10 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:21:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:22:02 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:22:11 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Test! Let's see the error."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 62390ms (ActiveRecord: 0.5ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:23:34 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 24ms (Views: 9.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:23:38 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:23:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:23:49 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"This is a punny post by sylvee."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "This is a punny post by sylvee."], ["created_at", "2017-06-08 15:23:49.077317"], ["updated_at", "2017-06-08 15:23:49.077317"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:23:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:23:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:24:23 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:24:33 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Where is this error?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Where is this error?"], ["created_at", "2017-06-08 15:24:33.130283"], ["updated_at", "2017-06-08 15:24:33.130283"]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 9.7ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:25:42 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"How about now?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "How about now?"], ["created_at", "2017-06-08 15:25:42.241827"], ["updated_at", "2017-06-08 15:25:42.241827"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:25:47 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", ""], ["created_at", "2017-06-08 15:25:47.231360"], ["updated_at", "2017-06-08 15:25:47.231360"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:27:04 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Let's try it again."}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Let's try it again."], ["created_at", "2017-06-08 15:27:04.094217"], ["updated_at", "2017-06-08 15:27:04.094217"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:27:09 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"What's going on?"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "What's going on?"], ["created_at", "2017-06-08 15:27:10.003559"], ["updated_at", "2017-06-08 15:27:10.003559"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:39:59 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:39:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:40:16 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Still working?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Still working?"], ["created_at", "2017-06-08 15:40:16.317620"], ["updated_at", "2017-06-08 15:40:16.317620"]]
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:40:20 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:40:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:42:01 -0400
+Processing by Api::V1::PunsController#index as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:42:01 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey there"}}
+  [1m[36mPun Load (1.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey there"], ["created_at", "2017-06-08 15:42:01.970141"], ["updated_at", "2017-06-08 15:42:01.970141"]]
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:42:27 -0400
+Processing by Api::V1::PunsController#index as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:42:27 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"this will give me back an array"}}
+  [1m[36mPun Load (4.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 4.7ms)
+
+
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "this will give me back an array"], ["created_at", "2017-06-08 15:42:27.274078"], ["updated_at", "2017-06-08 15:42:27.274078"]]
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:43:21 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (2.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:43:21 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Please let this work! por favor!"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Please let this work! por favor!"], ["created_at", "2017-06-08 15:43:21.327501"], ["updated_at", "2017-06-08 15:43:21.327501"]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:44:22 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 11:44:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:53:06 -0400
+Processing by Api::V1::PunsController#index as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:53:06 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Hey you! please work!"}}
+  [1m[36mPun Load (4.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 14ms (Views: 9.1ms | ActiveRecord: 4.4ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Hey you! please work!"], ["created_at", "2017-06-08 15:53:06.285843"], ["updated_at", "2017-06-08 15:53:06.285843"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:56:11 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:56:11 -0400
+Processing by Api::V1::PunsController#index as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Try this!"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPun Load (2.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 2.0ms)
+
+
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Try this!"], ["created_at", "2017-06-08 15:56:11.089551"], ["updated_at", "2017-06-08 15:56:11.089551"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:56:55 -0400
+Processing by Api::V1::PunsController#index as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:56:55 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"How about now please?"}}
+  [1m[36mPun Load (2.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 2.3ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "How about now please?"], ["created_at", "2017-06-08 15:56:55.089660"], ["updated_at", "2017-06-08 15:56:55.089660"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:57:45 -0400
+Processing by Api::V1::PunsController#index as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:57:45 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey!"}}
+  [1m[36mPun Load (1.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey!"], ["created_at", "2017-06-08 15:57:45.834427"], ["updated_at", "2017-06-08 15:57:45.834427"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 9.8ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:58:54 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"test!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test!"], ["created_at", "2017-06-08 15:58:54.731998"], ["updated_at", "2017-06-08 15:58:54.731998"]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:58:59 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"now!"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "now!"], ["created_at", "2017-06-08 15:58:59.892973"], ["updated_at", "2017-06-08 15:58:59.892973"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 11:59:03 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"here!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "here!"], ["created_at", "2017-06-08 15:59:03.288871"], ["updated_at", "2017-06-08 15:59:03.288871"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.3ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:00:04 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"pun 1 comment."}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "pun 1 comment."], ["created_at", "2017-06-08 16:00:04.237338"], ["updated_at", "2017-06-08 16:00:04.237338"]]
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:00:09 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"pun 2nd comment"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "pun 2nd comment"], ["created_at", "2017-06-08 16:00:09.555849"], ["updated_at", "2017-06-08 16:00:09.555849"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:00:16 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"This is third comment."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "This is third comment."], ["created_at", "2017-06-08 16:00:16.712719"], ["updated_at", "2017-06-08 16:00:16.712719"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:00:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (5.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 19ms (Views: 12.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:01:06 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:02:23 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:02:40 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:02:59 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (2.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:03:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:04:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:05:05 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:06:12 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:07:25 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:08:12 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:03 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (5.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:04 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:25 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hi\n"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hi\n"], ["created_at", "2017-06-08 16:09:25.557371"], ["updated_at", "2017-06-08 16:09:25.557371"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:27 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"you"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "you"], ["created_at", "2017-06-08 16:09:27.982149"], ["updated_at", "2017-06-08 16:09:27.982149"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:31 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"are "}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "are "], ["created_at", "2017-06-08 16:09:31.905160"], ["updated_at", "2017-06-08 16:09:31.905160"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 9.8ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:35 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cool"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "cool"], ["created_at", "2017-06-08 16:09:35.439094"], ["updated_at", "2017-06-08 16:09:35.439094"]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:39 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (9.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 23ms (Views: 13.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 12:09:46 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (20.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 31ms (Views: 9.7ms | ActiveRecord: 20.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:41:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:41:59 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:42:11 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:43:56 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"test here again."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test here again."], ["created_at", "2017-06-08 17:43:56.054854"], ["updated_at", "2017-06-08 17:43:56.054854"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:44:02 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"what's going on here?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "what's going on here?"], ["created_at", "2017-06-08 17:44:02.858716"], ["updated_at", "2017-06-08 17:44:02.858716"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:44:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:44:57 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:45:00 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (2.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 94ms (Views: 91.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:45:29 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (4.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:46:04 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:46:32 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:47:28 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:47:32 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:48:16 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 103ms (Views: 95.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:18 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:23 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"pun1"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "pun1"], ["created_at", "2017-06-08 17:49:23.328839"], ["updated_at", "2017-06-08 17:49:23.328839"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:32 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (13.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 28ms (Views: 14.1ms | ActiveRecord: 13.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:36 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"pun"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "pun"], ["created_at", "2017-06-08 17:49:36.515680"], ["updated_at", "2017-06-08 17:49:36.515680"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:41 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (3.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:49:44 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"asdfasdf"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "asdfasdf"], ["created_at", "2017-06-08 17:49:44.154406"], ["updated_at", "2017-06-08 17:49:44.154406"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 10.0ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:50:00 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"asdfasdf"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "asdfasdf"], ["created_at", "2017-06-08 17:50:00.694537"], ["updated_at", "2017-06-08 17:50:00.694537"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:50:16 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 13:50:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:53:16 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello!"], ["created_at", "2017-06-08 17:53:16.268520"], ["updated_at", "2017-06-08 17:53:16.268520"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:54:12 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey!"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey!"], ["created_at", "2017-06-08 17:54:12.989480"], ["updated_at", "2017-06-08 17:54:12.989480"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:55:28 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello!"], ["created_at", "2017-06-08 17:55:28.544975"], ["updated_at", "2017-06-08 17:55:28.544975"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 13:56:24 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello there!!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello there!!"], ["created_at", "2017-06-08 17:56:24.813737"], ["updated_at", "2017-06-08 17:56:24.813737"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:00:45 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"is this working?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "is this working?"], ["created_at", "2017-06-08 18:00:45.760080"], ["updated_at", "2017-06-08 18:00:45.760080"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:01:30 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey!"], ["created_at", "2017-06-08 18:01:30.201517"], ["updated_at", "2017-06-08 18:01:30.201517"]]
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:02:28 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello you!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello you!"], ["created_at", "2017-06-08 18:02:28.071368"], ["updated_at", "2017-06-08 18:02:28.071368"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:03:28 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey you!"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey you!"], ["created_at", "2017-06-08 18:03:28.338018"], ["updated_at", "2017-06-08 18:03:28.338018"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:15:41 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 74ms (Views: 65.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:16:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:16:17 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:16:25 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:19:19 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:20:06 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (7.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:20:24 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:20:46 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:20:52 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:21:09 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (6.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 88ms (Views: 81.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:21:15 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:21:24 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:31 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:37 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (5.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:40 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:45 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey!"], ["created_at", "2017-06-08 18:22:45.850809"], ["updated_at", "2017-06-08 18:22:45.850809"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 9.2ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:49 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"you!"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "you!"], ["created_at", "2017-06-08 18:22:49.771163"], ["updated_at", "2017-06-08 18:22:49.771163"]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:53 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cool"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "cool"], ["created_at", "2017-06-08 18:22:53.804909"], ["updated_at", "2017-06-08 18:22:53.804909"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:22:57 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 14:22:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:23:07 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (19.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 44ms (Views: 24.6ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:26:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:27:03 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hi!"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hi!"], ["created_at", "2017-06-08 18:27:03.139607"], ["updated_at", "2017-06-08 18:27:03.139607"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:27:06 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hiyes"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hiyes"], ["created_at", "2017-06-08 18:27:06.813349"], ["updated_at", "2017-06-08 18:27:06.813349"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:27:13 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (6.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:32:50 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:33:51 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (18.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 71ms (Views: 52.8ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:35:46 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (5.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 116ms (Views: 110.1ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:36:03 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:36:05 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (2.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:38:11 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (6.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:38:25 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:39:17 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:40:54 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:41:34 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:43:26 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:44:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:45:14 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:07 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-08 14:54:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:13 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:21 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey you"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey you"], ["created_at", "2017-06-08 18:54:21.486059"], ["updated_at", "2017-06-08 18:54:21.486059"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:34 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:40 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"?"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "?"], ["created_at", "2017-06-08 18:54:40.467879"], ["updated_at", "2017-06-08 18:54:40.467879"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:54:59 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:55:26 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:55:39 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:56:06 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:57:39 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:57:51 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:57:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:58:20 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 14:58:27 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+

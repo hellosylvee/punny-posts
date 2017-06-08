@@ -1,13 +1,13 @@
 import React from 'react'
-import Puns from './Puns'
+import Pun from './Pun'
 
 const PunsList = (props) => {
-  console.log('punslist!!!!! : ', props)
+  const allPuns = props.puns.map( (pun) => <Pun key={pun.id} pun={pun} /> )
 
   return(
     <div className='list'>
-      <h2>Puns List</h2>
-      <Puns puns={props.puns}/>
+      <h2>Puns</h2>
+      { allPuns }
     </div>
   )
 }
