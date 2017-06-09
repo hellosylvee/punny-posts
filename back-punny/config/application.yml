@@ -5,10 +5,10 @@
 # pusher_secret: abdc3b896a0ffb85d373
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
-#
+
+JWT_SECRET: 'c740708fbea123eec187a6b6f4453391deb24f91c56ff0db3219a7213763fb05eefb15fff47609d54da7008d8af9ebd0f8a969b00f15f5a34b5085bb9af73b1e'
+JWT_ALGORITHM: 'HS256'
+
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-
-JWT_SECRET = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imhpc3lsIn0.QDQsn-O5gJvhuwSS2039lsKLx74gOcZxqJ6Vhe32o90"
-JWT_ALGORITHM = 
