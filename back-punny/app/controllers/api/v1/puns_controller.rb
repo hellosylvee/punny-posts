@@ -8,7 +8,6 @@
 
   def create
     pun = Pun.create(pun_params)
-    # byebug
     render json: pun
   end
 

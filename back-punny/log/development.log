@@ -10042,3 +10042,465 @@ Processing by Api::V1::AuthController#create as HTML
 Completed 200 OK in 71ms (Views: 0.2ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4938089783584276410);[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdColumnToAccounts (20170609152312)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (35.4ms)[0m  [1m[35mALTER TABLE "accounts" ADD "user_id" integer[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170609152312"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4938089783584276410)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mAccount Load (8.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:37:47 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 25ms (Views: 9.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:37:51 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-09 11:37:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:37:54 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:37:59 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Hi!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.1ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Hi!"], ["created_at", "2017-06-09 15:37:59.073984"], ["updated_at", "2017-06-09 15:37:59.073984"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:38:01 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-09 11:38:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:40:48 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:40:59 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"Hi!"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "Hi!"], ["created_at", "2017-06-09 15:40:59.970248"], ["updated_at", "2017-06-09 15:40:59.970248"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:42:01 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:42:06 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"yay!"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "yay!"], ["created_at", "2017-06-09 15:42:06.521807"], ["updated_at", "2017-06-09 15:42:06.521807"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:42:51 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:42:52 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:42:58 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello?"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello?"], ["created_at", "2017-06-09 15:42:58.605098"], ["updated_at", "2017-06-09 15:42:58.605098"]]
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:43:04 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:43:07 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:43:22 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:51:09 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:51:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-09 11:51:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:52:36 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey this is a pun."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey this is a pun."], ["created_at", "2017-06-09 15:52:36.202195"], ["updated_at", "2017-06-09 15:52:36.202195"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:52:50 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:59:18 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 11:59:34 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4938089783584276410);[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveUserIdColumnFromAccounts (20170609160425)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (36.7ms)[0m  [1m[35mALTER TABLE "accounts" DROP "user_id"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170609160425"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4938089783584276410)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" ORDER BY "puns"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (27.8ms)[0m  [1m[33mUPDATE "puns" SET "user_id" = $1, "updated_at" = $2 WHERE "puns"."id" = $3[0m  [["user_id", 6], ["updated_at", "2017-06-09 17:03:32.781798"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" ORDER BY "accounts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "puns" SET "user_id" = $1, "updated_at" = $2 WHERE "puns"."id" = $3[0m  [["user_id", 6], ["updated_at", "2017-06-09 17:32:30.643993"], ["id", 2]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 11]]
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 13:34:24 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 13:42:27 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 13:56:55 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 13:57:00 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:05:53 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:06:05 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:09:11 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:09:17 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:09:19 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:10:28 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:10:31 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:11:00 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:11:02 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:11:04 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:11:42 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:12:18 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:12:22 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:12:44 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:12:54 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:15:24 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:15:50 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:15:55 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:16:16 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:17:17 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 14:31:32 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-09 14:31:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

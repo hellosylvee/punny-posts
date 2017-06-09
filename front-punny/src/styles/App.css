@@ -14,6 +14,12 @@
   padding: 10px;
 }
 
+.search {
+  border: solid green 2px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
 .gif {
   border: solid blue 2px;
 }
