@@ -1,6 +1,6 @@
  class Api::V1::PunsController < ApplicationController
    before_action
-   
+
   def index
     puns = Pun.all
     render json: puns

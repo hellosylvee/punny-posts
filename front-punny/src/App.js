@@ -10,7 +10,7 @@ import './styles/App.css';
 
 class App extends Component {
   handleSignIn(params){
-    let URL = 'http://localhost:3000/api/v1/puns'
+    let URL = 'http://localhost:3000/api/v1/auth'
     axios.get(URL)
       .then(res => console.log('what do i get here?', res))
 

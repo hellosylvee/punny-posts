@@ -8783,3 +8783,259 @@ Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 0.4ms)
 
 
   [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 21:07:20 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 29ms (Views: 10.3ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:19:56 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 0.3ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:19:56 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:00 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.7ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:03 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:08 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:16 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:23 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:34 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee"}
+  [1m[36mAccount Load (0.5ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:37 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:20:42 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:28:23 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 90ms (Views: 0.3ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:28:27 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.8ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:28:28 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 80ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:28:57 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 84ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:14 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 86ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:17 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:22 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.2ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:27 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"sylvee", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (1.0ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "sylvee"], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:37 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"mj", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.3ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "mj"], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:29:49 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"mj", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.6ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "mj"], ["LIMIT", 1]]
+Completed 200 OK in 78ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 21:30:09 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 21ms (Views: 9.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 21:30:25 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 21:30:31 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-08 21:32:13 -0400
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 34ms (Views: 16.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:34:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/auth"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:34:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/auth"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:34:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/auth"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-06-08 21:35:00 -0400
+Processing by Api::V1::AuthController#create as */*
+  Parameters: {"username"=>"mj", "password"=>"[FILTERED]"}
+  [1m[36mAccount Load (0.4ms)[0m  [1m[34mSELECT  "accounts".* FROM "accounts" WHERE "accounts"."username" = $1 LIMIT $2[0m  [["username", "mj"], ["LIMIT", 1]]
+Completed 200 OK in 123ms (Views: 0.3ms | ActiveRecord: 30.8ms)
+
+
