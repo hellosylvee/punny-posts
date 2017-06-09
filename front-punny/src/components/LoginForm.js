@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class SignInForm extends Component {
+class LoginForm extends Component {
   constructor(){
     super()
     this.state = {
@@ -17,8 +17,8 @@ class SignInForm extends Component {
 
   handleSubmit(e){
     e.preventDefault()
-    console.log('hey!')
-    this.props.handleSignIn(this.state)
+    console.log('hey! you are sending this to app.js')
+    this.props.handleLogin(this.state)
   }
 
   render(){
@@ -43,4 +43,4 @@ class SignInForm extends Component {
   }
 }
 
-export default SignInForm
+export default LoginForm
