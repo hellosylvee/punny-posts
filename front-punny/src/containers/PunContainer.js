@@ -14,6 +14,7 @@ class PunContainer extends Component {
     this.state = {
       query: '',
       random_gif: {},
+      gif_id: '',
       puns: []
     }
   }
@@ -22,23 +23,27 @@ class PunContainer extends Component {
     let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
     console.log(URL)
     axios.get(URL)
-      .then( res => this.setState({ random_gif: res.data.data }))
+      .then( res => this.setState({ random_gif: res.data.data })) //1 object with url property
       // this.props.history.push('/random')
   }
 
   handleSubmit(punInput){
-    let PUN_URL = 'http://localhost:3000/api/v1/puns'
-    axios.post(PUN_URL, {
-      pun: { pun: punInput }
-    })
-      .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
-
     let GIF_URL = 'http://localhost:3000/api/v1/gifs'
     axios.post(GIF_URL, {
       gif: { url: this.state.random_gif.image_url }
     })
-      .then( res => console.log('hello'))
+      .then( res => this.setState({ gif_id: res.data.id}))
+    // .then( res => console.log('hello'))
 
+    let PUN_URL = 'http://localhost:3000/api/v1/puns'
+    axios.post(PUN_URL, {
+      pun: {
+        pun: punInput,
+        gif_id: this.state.gif_id,
+        user_id: 1
+      }
+    })
+      .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
   }
 
   // getTodaysDate() {

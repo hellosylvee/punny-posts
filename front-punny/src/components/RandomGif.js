@@ -1,6 +1,7 @@
 import React from 'react'
 
 const RandomGif = (props) => {
+  console.log('randomgif', props)
   let gif = props.random_gif
 
   return(
