@@ -9,6 +9,13 @@ class Api::V1::GifsController < ApplicationController
     render json: gif
   end
 
+  def show
+    gif = Gif.find(params[:id])
+    respond_to do |format|
+      format.json { render json: gif}
+    end
+  end
+
   private
 
   def gif_params
