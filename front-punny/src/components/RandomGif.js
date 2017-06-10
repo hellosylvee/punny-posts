@@ -1,8 +1,14 @@
 import React from 'react'
 
 const RandomGif = (props) => {
-  let test = <img src={props.random_gif.image_url} alt={test}/>
-  return( <div>{test}</div> )
+  let gif = props.random_gif
+
+  return(
+    <div>
+      <img src={gif.image_url} alt={gif.type}/>
+      {props.random_gif.image_url ? <button>refresh</button> : null}
+    </div>
+  )
 }
 
 export default RandomGif

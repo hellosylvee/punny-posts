@@ -11,6 +11,14 @@
     render json: pun
   end
 
+  def update
+
+  end
+
+  def delete
+
+  end
+    
   private
 
   def pun_params

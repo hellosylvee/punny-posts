@@ -20,10 +20,12 @@ class SearchForm extends Component {
 
   render(){
     return(
-      <form className='search' onSubmit={this.handleQuerySubmit.bind(this)}>
-        <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
-        <button>Search</button>
-      </form>
+      <div>
+        <form className='search' onSubmit={this.handleQuerySubmit.bind(this)}>
+          <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
+          <button>Search</button>
+        </form>
+      </div>
     )
   }
 }

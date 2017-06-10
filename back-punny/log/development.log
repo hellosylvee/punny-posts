@@ -10504,3 +10504,1254 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-09 17:54:49 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-09 17:54:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 10:56:07 -0400
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (28.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 69ms (Views: 18.1ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 10:56:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 19ms (Views: 9.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 10:56:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:16:46 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:16:51 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:16:52 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:17:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:17:13 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:17:22 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:19:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:25:39 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:27:07 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:28:00 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:28:09 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:29:10 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:29:13 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:31:05 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:31:19 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 11:43:50 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 13:33:43 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hey there this is a pun."}}
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hey there this is a pun."], ["created_at", "2017-06-10 17:33:43.822494"], ["updated_at", "2017-06-10 17:33:43.822494"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 50ms (Views: 1.7ms | ActiveRecord: 30.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 13:35:08 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"pun is displayed here"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "pun is displayed here"], ["created_at", "2017-06-10 17:35:08.923574"], ["updated_at", "2017-06-10 17:35:08.923574"]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 13:53:32 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"hello this work"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello this work"], ["created_at", "2017-06-10 17:53:32.765777"], ["updated_at", "2017-06-10 17:53:32.765777"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:07:06 -0400
+Processing by Api::V1::PunsController#create as HTML
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:07:06 -0400
+  Parameters: {"pun"=>{"pun"=>"test"}}
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/gifs"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test"], ["created_at", "2017-06-10 18:07:06.371775"], ["updated_at", "2017-06-10 18:07:06.371775"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:07:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/gifs"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:08:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/gifs"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:08:35 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/gifs"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:08:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:10:33 -0400
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:11:12 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Api::V1::GifsController):
+  
+actionpack (5.1.1) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:11:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:12:05 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (18.5ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 40ms (Views: 8.1ms | ActiveRecord: 25.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:12:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:12:52 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (2.2ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:12:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:13:02 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"test"}}
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:13:02 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gif):
+  
+app/controllers/api/v1/gifs_controller.rb:15:in `gif_params'
+app/controllers/api/v1/gifs_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test"], ["created_at", "2017-06-10 18:13:03.016845"], ["updated_at", "2017-06-10 18:13:03.016845"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 39ms (Views: 0.5ms | ActiveRecord: 30.2ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:13:11 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"test"}}
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:13:11 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media2.giphy.com/media/l0JMaNj0xZ6cDFLvq/giphy.gif"}}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test"], ["created_at", "2017-06-10 18:13:11.231347"], ["updated_at", "2017-06-10 18:13:11.231347"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 10.5ms)
+
+
+  [1m[35mSQL (10.1ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media2.giphy.com/media/l0JMaNj0xZ6cDFLvq/giphy.gif"], ["created_at", "2017-06-10 18:13:11.232919"], ["updated_at", "2017-06-10 18:13:11.232919"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:13:14 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:13:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:13:36 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:13:40 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:13:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2017-06-10 14:13:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:13:57 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.5ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:18:07 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:18:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:18:19 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:18:24 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:18:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:18:50 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media0.giphy.com/media/Snil1KvtjhnIQ/giphy.gif"}}
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:18:50 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"this corgi is PAWSOME. look at it's ears!!!!!!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media0.giphy.com/media/Snil1KvtjhnIQ/giphy.gif"], ["created_at", "2017-06-10 18:18:50.405675"], ["updated_at", "2017-06-10 18:18:50.405675"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "this corgi is PAWSOME. look at it's ears!!!!!!"], ["created_at", "2017-06-10 18:18:50.406344"], ["updated_at", "2017-06-10 18:18:50.406344"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 9.6ms)
+
+
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:18:54 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:18:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:19:05 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:19:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:27:07 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 15ms (Views: 5.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:27:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:37:58 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 23ms (Views: 9.8ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:37:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:38:03 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:38:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:51:57 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:51:57 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{}}
+  Parameters: {"pun"=>{"pun"=>"rick and morty here"}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gif):
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  
+app/controllers/api/v1/gifs_controller.rb:15:in `gif_params'
+app/controllers/api/v1/gifs_controller.rb:8:in `create'
+  [1m[35mSQL (22.0ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "rick and morty here"], ["created_at", "2017-06-10 18:51:57.076764"], ["updated_at", "2017-06-10 18:51:57.076764"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 32ms (Views: 0.4ms | ActiveRecord: 28.0ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:52:58 -0400
+Processing by Api::V1::PunsController#create as HTML
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:52:58 -0400
+  Parameters: {"pun"=>{"pun"=>"is this working?"}}
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"https://media2.giphy.com/media/7Y66VN3rtkPtu/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "is this working?"], ["created_at", "2017-06-10 18:52:58.313295"], ["updated_at", "2017-06-10 18:52:58.313295"]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "https://media2.giphy.com/media/7Y66VN3rtkPtu/giphy.gif"], ["created_at", "2017-06-10 18:52:58.314310"], ["updated_at", "2017-06-10 18:52:58.314310"]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 10.1ms)
+
+
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:53:02 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:53:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:53:06 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.7ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:53:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:54:41 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:54:41 -0400
+Processing by Api::V1::PunsController#create as HTML
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"test"}}
+  Parameters: {"gif"=>{"url"=>"http://media0.giphy.com/media/iOXMcT2qEiIUg/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "test"], ["created_at", "2017-06-10 18:54:41.273955"], ["updated_at", "2017-06-10 18:54:41.273955"]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media0.giphy.com/media/iOXMcT2qEiIUg/giphy.gif"], ["created_at", "2017-06-10 18:54:41.275487"], ["updated_at", "2017-06-10 18:54:41.275487"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 7.6ms)
+
+
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 12.4ms)
+
+
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:55:00 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/l41lPaVXzvGGMuAQ8/giphy.gif"}}
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:55:00 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"corgi test!!!!"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/l41lPaVXzvGGMuAQ8/giphy.gif"], ["created_at", "2017-06-10 18:55:00.767553"], ["updated_at", "2017-06-10 18:55:00.767553"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "corgi test!!!!"], ["created_at", "2017-06-10 18:55:00.768580"], ["updated_at", "2017-06-10 18:55:00.768580"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 9.5ms)
+
+
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:55:47 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 14:55:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:55:51 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 14:58:55 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"corgi coming this way!"}}
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 14:58:55 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"https://media3.giphy.com/media/tG6ZDOfW5Xeo/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "corgi coming this way!"], ["created_at", "2017-06-10 18:58:55.441356"], ["updated_at", "2017-06-10 18:58:55.441356"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "https://media3.giphy.com/media/tG6ZDOfW5Xeo/giphy.gif"], ["created_at", "2017-06-10 18:58:55.444316"], ["updated_at", "2017-06-10 18:58:55.444316"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 7.2ms)
+
+
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:07:10 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:07:10 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"i scream, u scream, we all scream"}}
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media2.giphy.com/media/l3vRmSo3bXYajCG8E/giphy.gif"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "i scream, u scream, we all scream"], ["created_at", "2017-06-10 19:07:10.926274"], ["updated_at", "2017-06-10 19:07:10.926274"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media2.giphy.com/media/l3vRmSo3bXYajCG8E/giphy.gif"], ["created_at", "2017-06-10 19:07:10.932179"], ["updated_at", "2017-06-10 19:07:10.932179"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 16.2ms)
+
+
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 15.1ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:07:27 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:07:27 -0400
+Processing by Api::V1::PunsController#create as HTML
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"rainbow vanilla"}}
+  Parameters: {"gif"=>{"url"=>"http://media2.giphy.com/media/l3vRmSo3bXYajCG8E/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "rainbow vanilla"], ["created_at", "2017-06-10 19:07:27.413386"], ["updated_at", "2017-06-10 19:07:27.413386"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media2.giphy.com/media/l3vRmSo3bXYajCG8E/giphy.gif"], ["created_at", "2017-06-10 19:07:27.414107"], ["updated_at", "2017-06-10 19:07:27.414107"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 9.5ms)
+
+
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:08:06 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 15:08:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:08:11 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 15:08:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:09:02 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:09:02 -0400
+Processing by Api::V1::PunsController#create as HTML
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"happy birfday!!!!"}}
+  Parameters: {"gif"=>{"url"=>"https://media0.giphy.com/media/384OjbNK86Osw/giphy.gif"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "happy birfday!!!!"], ["created_at", "2017-06-10 19:09:02.564193"], ["updated_at", "2017-06-10 19:09:02.564193"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "https://media0.giphy.com/media/384OjbNK86Osw/giphy.gif"], ["created_at", "2017-06-10 19:09:02.565354"], ["updated_at", "2017-06-10 19:09:02.565354"]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 7.4ms)
+
+
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 17ms (Views: 0.8ms | ActiveRecord: 12.8ms)
+
+
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:09:07 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:09:07 -0400
+Processing by Api::V1::PunsController#create as HTML
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"birthday cake"}}
+  Parameters: {"gif"=>{"url"=>"https://media0.giphy.com/media/384OjbNK86Osw/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "https://media0.giphy.com/media/384OjbNK86Osw/giphy.gif"], ["created_at", "2017-06-10 19:09:07.983852"], ["updated_at", "2017-06-10 19:09:07.983852"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "birthday cake"], ["created_at", "2017-06-10 19:09:07.984731"], ["updated_at", "2017-06-10 19:09:07.984731"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.4ms)
+
+
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 15:09:13 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 15:09:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 15:09:28 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 15:09:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

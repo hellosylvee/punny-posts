@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
-import AppContainer from './containers/AppContainer'
+
+import PunContainer from './containers/PunContainer'
+import RandomContainer from './containers/RandomContainer'
+
 // import Topics from './components/home/Topics'
+
 import NavBar from './components/NavBar'
 import LoginForm from './components/LoginForm'
-import setAuthorizationToken from './components/auth/setAuthorizationToken'
-import axios from 'axios'
 
+import setAuthorizationToken from './components/auth/setAuthorizationToken'
+
+import axios from 'axios'
 import './styles/App.css';
 
 class App extends Component {
@@ -31,12 +36,11 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route
-            exact path='/' component={AppContainer} />
+          <Route exact path='/' component={PunContainer} />
+          <Route path='/random' component={RandomContainer} />
           <Route
             path='/today'
-            render={() => <h1>This is where the pun of the day will be displayed</h1>}
-          />
+            render={() => <h1>This is where the pun of the day will be displayed</h1>} />
           <Route
             path='/new'
             render={() => <h1>This is where you will upload your giphy or image!</h1>} />

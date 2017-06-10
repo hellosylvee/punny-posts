@@ -8,6 +8,11 @@
   margin-bottom: 20px;
 }
 
+.navbar li {
+  display: inline;
+  padding-right: 20px;
+}
+
 .signin {
   border: solid green 2px;
   margin-bottom: 20px;
