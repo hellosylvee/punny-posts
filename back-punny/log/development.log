@@ -13549,3 +13549,1313 @@ puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
 puma (3.9.1) lib/puma/server.rb:435:in `process_client'
 puma (3.9.1) lib/puma/server.rb:299:in `block in run'
 puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 18:50:27 -0400
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 18:50:28 -0400
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 18:50:28 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#index as HTML
+Processing by Api::V1::GifsController#index as HTML
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (40.8ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  [1m[36mGif Load (41.3ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+  [1m[36mPun Load (44.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mPun Load (5.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 1]]
+[active_model_serializers]   [1m[36mPun Load (9.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 1]]
+[active_model_serializers]   [1m[36mPun Load (2.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 2]]
+[active_model_serializers]   [1m[36mPun Load (5.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 2]]
+[active_model_serializers]   [1m[36mPun Load (2.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 3]]
+[active_model_serializers]   [1m[36mPun Load (2.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 3]]
+[active_model_serializers]   [1m[36mPun Load (1.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (2.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 4]]
+[active_model_serializers]   [1m[36mPun Load (7.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 5]]
+[active_model_serializers]   [1m[36mPun Load (4.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 6]]
+[active_model_serializers]   [1m[36mPun Load (6.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (1.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 7]]
+[active_model_serializers]   [1m[36mPun Load (5.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (3.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 8]]
+[active_model_serializers]   [1m[36mPun Load (3.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (2.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 9]]
+[active_model_serializers]   [1m[36mPun Load (4.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (6.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 10]]
+[active_model_serializers]   [1m[36mPun Load (11.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 9]]
+[active_model_serializers]   [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (3.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 11]]
+[active_model_serializers]   [1m[36mPun Load (3.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 10]]
+[active_model_serializers]   [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (4.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 11]]
+[active_model_serializers]   [1m[36mPun Load (5.1ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 12]]
+[active_model_serializers]   [1m[36mPun Load (3.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 12]]
+[active_model_serializers]   [1m[36mPun Load (2.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 13]]
+[active_model_serializers]   [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 13]]
+[active_model_serializers]   [1m[36mGif Load (7.8ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (6.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 14]]
+[active_model_serializers]   [1m[36mPun Load (4.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 14]]
+[active_model_serializers]   [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (4.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 15]]
+[active_model_serializers]   [1m[36mPun Load (6.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 15]]
+[active_model_serializers]   [1m[36mGif Load (4.1ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 16]]
+[active_model_serializers]   [1m[36mPun Load (2.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 16]]
+[active_model_serializers]   [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 17]]
+[active_model_serializers]   [1m[36mPun Load (2.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 17]]
+[active_model_serializers]   [1m[36mGif Load (5.1ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (2.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 18]]
+[active_model_serializers]   [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 18]]
+[active_model_serializers]   [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 19]]
+[active_model_serializers]   [1m[36mPun Load (5.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 19]]
+[active_model_serializers]   [1m[36mPun Load (2.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 20]]
+[active_model_serializers]   [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (2.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 21]]
+[active_model_serializers]   [1m[36mPun Load (5.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 20]]
+[active_model_serializers]   [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 21]]
+[active_model_serializers]   [1m[36mPun Load (5.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 22]]
+[active_model_serializers]   [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mPun Load (19.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 22]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (237.58ms)
+Completed 200 OK in 493ms (Views: 210.7ms | ActiveRecord: 260.8ms)
+
+
+[active_model_serializers]   [1m[36mPun Load (15.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 23]]
+[active_model_serializers]   [1m[36mPun Load (6.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 23]]
+[active_model_serializers]   [1m[36mPun Load (2.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 24]]
+[active_model_serializers]   [1m[36mPun Load (2.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 24]]
+[active_model_serializers]   [1m[36mPun Load (86.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 25]]
+[active_model_serializers]   [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 26]]
+[active_model_serializers]   [1m[36mPun Load (89.7ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 25]]
+[active_model_serializers]   [1m[36mPun Load (2.6ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 26]]
+[active_model_serializers]   [1m[36mPun Load (2.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 27]]
+[active_model_serializers]   [1m[36mPun Load (6.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 27]]
+[active_model_serializers]   [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 28]]
+[active_model_serializers]   [1m[36mPun Load (2.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 29]]
+[active_model_serializers]   [1m[36mPun Load (13.9ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 28]]
+[active_model_serializers]   [1m[36mPun Load (2.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (402.0ms)
+[active_model_serializers]   [1m[36mPun Load (28.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 29]]
+Completed 200 OK in 656ms (Views: 249.0ms | ActiveRecord: 387.6ms)
+
+
+[active_model_serializers]   [1m[36mPun Load (3.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 30]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (429.65ms)
+Completed 200 OK in 680ms (Views: 246.0ms | ActiveRecord: 414.7ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 18:50:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 18:50:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 18:56:25 -0400
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 18:56:25 -0400
+Processing by Api::V1::PunsController#create as HTML
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"sad dog\n", "gif_id"=>"", "user_id"=>1}}
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/1iTItUOuJLsbev28/giphy.gif"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (26.6ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/1iTItUOuJLsbev28/giphy.gif"], ["created_at", "2017-06-10 22:56:25.073904"], ["updated_at", "2017-06-10 22:56:25.073904"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 31]]
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (2.3ms)
+Completed 200 OK in 35ms (Views: 2.9ms | ActiveRecord: 28.3ms)
+
+
+  [1m[35mSQL (29.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pun", "sad dog\n"], ["user_id", 1], ["created_at", "2017-06-10 22:56:25.078038"], ["updated_at", "2017-06-10 22:56:25.078038"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 40ms (ActiveRecord: 35.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Gif with 'id'=):
+  
+app/controllers/api/v1/puns_controller.rb:11:in `create'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 18:56:27 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (8.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (44.85ms)
+Completed 200 OK in 48ms (Views: 37.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 18:56:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 18:56:34 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 2]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 3]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 4]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 5]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 6]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 7]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 8]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 9]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 10]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 11]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 12]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 13]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 14]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 15]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 16]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 17]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 18]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 19]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 20]]
+[active_model_serializers]   [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 21]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 22]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 23]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 24]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 25]]
+[active_model_serializers]   [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 26]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 27]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 28]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 29]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 30]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 31]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (58.09ms)
+Completed 200 OK in 62ms (Views: 54.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 18:56:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:36:47 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:36:47 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media0.giphy.com/media/4dtKSU1d2Jo5i/giphy.gif"}}
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"see puppy", "gif_id"=>"", "user_id"=>1}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media0.giphy.com/media/4dtKSU1d2Jo5i/giphy.gif"], ["created_at", "2017-06-10 23:36:47.745510"], ["updated_at", "2017-06-10 23:36:47.745510"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+[active_model_serializers]   [1m[36mPun Load (1.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 32]]
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (4.31ms)
+Completed 200 OK in 30ms (Views: 5.9ms | ActiveRecord: 16.9ms)
+
+
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pun", "see puppy"], ["user_id", 1], ["created_at", "2017-06-10 23:36:47.758506"], ["updated_at", "2017-06-10 23:36:47.758506"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (28.25ms)
+Completed 200 OK in 63ms (Views: 27.0ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:36:50 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.71ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:36:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:37:19 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.6ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 2]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 3]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 4]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 5]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 6]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 7]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 8]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 9]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 10]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 11]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 12]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 13]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 14]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 15]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 16]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 17]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 18]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 19]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 20]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 21]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 22]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 23]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 24]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 25]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 26]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 27]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 28]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 29]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 30]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 31]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 32]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.39ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:37:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:37:28 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (1.0ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.55ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:37:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:39:09 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:39:09 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/l0Ex6aA63c8MHeoqk/giphy.gif"}}
+  Parameters: {"pun"=>{"pun"=>"hello!"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/l0Ex6aA63c8MHeoqk/giphy.gif"], ["created_at", "2017-06-10 23:39:09.743626"], ["updated_at", "2017-06-10 23:39:09.743626"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "hello!"], ["created_at", "2017-06-10 23:39:09.745410"], ["updated_at", "2017-06-10 23:39:09.745410"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 33]]
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 14ms (Views: 2.1ms | ActiveRecord: 8.0ms)
+
+
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 17ms (Views: 1.3ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:39:11 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.57ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:39:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:39:17 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 1]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 2]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 3]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 4]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 5]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 6]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 7]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 8]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 9]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 10]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 11]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 12]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 13]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 14]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 15]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 16]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 17]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 18]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 19]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 20]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 21]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 22]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 23]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 24]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 25]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 26]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 27]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 28]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 29]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 30]]
+[active_model_serializers]   [1m[36mPun Load (0.3ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 31]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 32]]
+[active_model_serializers]   [1m[36mPun Load (0.2ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 33]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.21ms)
+Completed 200 OK in 63ms (Views: 55.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:39:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:43:38 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:43:38 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"https://media2.giphy.com/media/WpKnRncTsVPeU/giphy.gif"}}
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"watermelon slice"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "watermelon slice"], ["created_at", "2017-06-10 23:43:38.503412"], ["updated_at", "2017-06-10 23:43:38.503412"]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (14.1ms)
+  [1m[35mSQL (17.3ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "https://media2.giphy.com/media/WpKnRncTsVPeU/giphy.gif"], ["created_at", "2017-06-10 23:43:38.510634"], ["updated_at", "2017-06-10 23:43:38.510634"]]
+Completed 200 OK in 34ms (Views: 17.3ms | ActiveRecord: 7.5ms)
+
+
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers]   [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns" WHERE "puns"."gif_id" = $1[0m  [["gif_id", 34]]
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (5.46ms)
+Completed 200 OK in 54ms (Views: 8.0ms | ActiveRecord: 37.8ms)
+
+
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:44:31 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.07ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:44:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:44:47 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.1ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (59.68ms)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:44:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:51:45 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gif):
+  
+app/controllers/api/v1/gifs_controller.rb:20:in `gif_params'
+app/controllers/api/v1/gifs_controller.rb:8:in `create'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:51:49 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:51:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:51:55 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.73ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:51:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:52:28 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.82ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:52:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:53:25 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.5ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.3ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:53:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:54:08 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.3ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.76ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:54:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:54:17 -0400
+Processing by Api::V1::GifsController#create as HTML
+  Parameters: {"gif"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gif):
+  
+app/controllers/api/v1/gifs_controller.rb:20:in `gif_params'
+app/controllers/api/v1/gifs_controller.rb:8:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:54:28 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"easter bunny with rainbows"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "easter bunny with rainbows"], ["created_at", "2017-06-10 23:54:28.843746"], ["updated_at", "2017-06-10 23:54:28.843746"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:54:38 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (38.89ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:54:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:54:43 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:54:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:55:37 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:55:37 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media2.giphy.com/media/qAXmLLi5jGYo/giphy.gif"}}
+  Parameters: {"pun"=>{"pun"=>"surfer chick"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media2.giphy.com/media/qAXmLLi5jGYo/giphy.gif"], ["created_at", "2017-06-10 23:55:37.819624"], ["updated_at", "2017-06-10 23:55:37.819624"]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "surfer chick"], ["created_at", "2017-06-10 23:55:37.820420"], ["updated_at", "2017-06-10 23:55:37.820420"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 7.4ms)
+
+
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 17ms (Views: 1.1ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 19:55:56 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.88ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:55:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 19:56:01 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.6ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 19:56:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" ORDER BY "gifs"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mGif Load (0.5ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" ORDER BY "gifs"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPun Load (0.9ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" ORDER BY "puns"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPun Load (0.6ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPun Load (0.4ms)[0m  [1m[34mSELECT  "puns".* FROM "puns" WHERE "puns"."gif_id" = $1 LIMIT $2[0m  [["gif_id", 1], ["LIMIT", 11]]
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 20:07:49 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.5ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.92ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 20:07:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 20:14:23 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 20:14:23 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/26xBy8a0gviPpHqUM/giphy.gif"}}
+  Parameters: {"pun"=>{"pun"=>"whale whale whale"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/26xBy8a0gviPpHqUM/giphy.gif"], ["created_at", "2017-06-11 00:14:23.662958"], ["updated_at", "2017-06-11 00:14:23.662958"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "whale whale whale"], ["created_at", "2017-06-11 00:14:23.663701"], ["updated_at", "2017-06-11 00:14:23.663701"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 7.4ms)
+
+
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 16ms (Views: 1.3ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/api/v1/puns" for 127.0.0.1 at 2017-06-10 20:14:30 -0400
+Processing by Api::V1::PunsController#index as HTML
+  [1m[36mPun Load (0.8ms)[0m  [1m[34mSELECT "puns".* FROM "puns"[0m
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE Gif Load (0.0ms)[0m  [1m[34mSELECT  "gifs".* FROM "gifs" WHERE "gifs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.25ms)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 20:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 20:14:36 -0400
+Processing by Api::V1::GifsController#index as HTML
+  [1m[36mGif Load (0.4ms)[0m  [1m[34mSELECT "gifs".* FROM "gifs"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.52ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-06-10 20:14:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 20:20:09 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 20:20:09 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media1.giphy.com/media/UaSERSCYkjblm/giphy.gif"}}
+  Parameters: {"pun"=>{"pun"=>"skinny?"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media1.giphy.com/media/UaSERSCYkjblm/giphy.gif"], ["created_at", "2017-06-11 00:20:09.921168"], ["updated_at", "2017-06-11 00:20:09.921168"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "puns" ("pun", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["pun", "skinny?"], ["created_at", "2017-06-11 00:20:09.922084"], ["updated_at", "2017-06-11 00:20:09.922084"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 7.4ms)
+
+
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered PunSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 17ms (Views: 1.4ms | ActiveRecord: 12.4ms)
+
+

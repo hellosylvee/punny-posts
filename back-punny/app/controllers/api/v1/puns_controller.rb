@@ -8,20 +8,6 @@
 
   def create
     pun = Pun.create(pun_params)
-    gif = Gif.find(params[:gif_id])
-    user = User.find_or_create_by(params[:user_id])
-    # gif = Gif.find(:id)
-    #
-    # pun = Pun.new(
-    #   pun: params[:pun],
-    #   user_id:
-    #   gif_id:
-    # )
-    #
-    # if pun.valid?
-    #   pun.save
-    #   render json: pun
-    # end
     render json: pun
   end
 

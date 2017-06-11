@@ -23,7 +23,7 @@ class PunContainer extends Component {
     let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
     console.log(URL)
     axios.get(URL)
-      .then( res => this.setState({ random_gif: res.data.data })) //1 object with url property
+      .then( res => this.setState({ random_gif: res.data.data }))
       // this.props.history.push('/random')
   }
 
@@ -33,15 +33,10 @@ class PunContainer extends Component {
       gif: { url: this.state.random_gif.image_url }
     })
       .then( res => this.setState({ gif_id: res.data.id}))
-    // .then( res => console.log('hello'))
 
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
-      pun: {
-        pun: punInput,
-        gif_id: this.state.gif_id,
-        user_id: 1
-      }
+      pun: { pun: punInput }
     })
       .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
   }
