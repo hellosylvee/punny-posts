@@ -32,11 +32,11 @@ class PunContainer extends Component {
     axios.post(GIF_URL, {
       gif: { url: this.state.random_gif.image_url }
     })
-      .then( res => this.setState({ gif_id: res.data.id}))
 
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
-      pun: { pun: punInput }
+      pun: { pun: punInput },
+      gif: { url: this.state.random_gif.image_url }
     })
       .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
   }

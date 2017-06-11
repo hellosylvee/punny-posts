@@ -14859,3 +14859,147 @@ Completed 200 OK in 12ms (Views: 1.0ms | ActiveRecord: 7.4ms)
 Completed 200 OK in 17ms (Views: 1.4ms | ActiveRecord: 12.4ms)
 
 
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:54:35 -0400
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"this little piggy when to the market."}, "gif"=>{"url"=>"http://media2.giphy.com/media/GFKdfOgGNPqi4/giphy.gif"}}
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.9ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:57:07 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cat getting a massage\n"}, "gif"=>{"url"=>"http://media3.giphy.com/media/CdqNOCOc8Lcw8/giphy.gif"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:57:44 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"asdfasdfasdf"}, "gif"=>{"url"=>"http://media0.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:58:16 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cat cat\n"}, "gif"=>{"url"=>"http://media1.giphy.com/media/O5pd2oPjjcGFW/giphy.gif"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:58:49 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"byebug\n"}, "gif"=>{"url"=>"https://media1.giphy.com/media/BBNYBoYa5VwtO/giphy.gif"}}
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 21:59:04 -0400
+Completed 500 Internal Server Error in 72880ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/api/v1/puns_controller.rb:11:in `create'
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>""}, "gif"=>{"url"=>"https://media1.giphy.com/media/BBNYBoYa5VwtO/giphy.gif"}}
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 9.5ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 22:00:16 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cat"}, "gif"=>{"url"=>"http://media4.giphy.com/media/GFHJXPCoVQEec/giphy.gif"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.8ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 22:02:28 -0400
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"cat\n"}, "gif"=>{"url"=>"http://media4.giphy.com/media/phqUAsOieX92o/giphy.gif"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 22:04:50 -0400
+Processing by Api::V1::GifsController#create as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 22:04:50 -0400
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"}}
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>"dogggg"}, "gif"=>{"url"=>"http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+  [1m[35mSQL (24.6ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"], ["created_at", "2017-06-11 02:04:50.155924"], ["updated_at", "2017-06-11 02:04:50.155924"]]
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.5ms)
+Completed 200 OK in 171ms (Views: 127.2ms | ActiveRecord: 37.8ms)
+
+
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 22:04:52 -0400
+Processing by Api::V1::GifsController#create as HTML
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 22:04:52 -0400
+  Parameters: {"gif"=>{"url"=>"http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"}}
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"pun"=>{"pun"=>""}, "gif"=>{"url"=>"http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+  [1m[35mSQL (24.4ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media3.giphy.com/media/xUPGciUP5rUdUEeOg8/giphy.gif"], ["created_at", "2017-06-11 02:04:52.751741"], ["updated_at", "2017-06-11 02:04:52.751741"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 39ms (Views: 0.6ms | ActiveRecord: 33.5ms)
+
+
+Started POST "/api/v1/gifs" for 127.0.0.1 at 2017-06-10 22:05:39 -0400
+Started POST "/api/v1/puns" for 127.0.0.1 at 2017-06-10 22:05:39 -0400
+Processing by Api::V1::GifsController#create as HTML
+Processing by Api::V1::PunsController#create as HTML
+  Parameters: {"gif"=>{"url"=>"http://media0.giphy.com/media/RBBWIAfTzuHxS/giphy.gif"}}
+  Parameters: {"pun"=>{"pun"=>"cats"}, "gif"=>{"url"=>"http://media0.giphy.com/media/RBBWIAfTzuHxS/giphy.gif"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/api/v1/puns_controller.rb:10:in `create'
+  [1m[35mSQL (28.9ms)[0m  [1m[32mINSERT INTO "gifs" ("url", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["url", "http://media0.giphy.com/media/RBBWIAfTzuHxS/giphy.gif"], ["created_at", "2017-06-11 02:05:39.662784"], ["updated_at", "2017-06-11 02:05:39.662784"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered GifSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 40ms (Views: 2.0ms | ActiveRecord: 35.5ms)
+
+

@@ -7,7 +7,11 @@
   end
 
   def create
-    pun = Pun.create(pun_params)
+    gif = Gif.create(params['gif'])
+    pun = Pun.new(params['pun'])
+    pun.gif_id = gif.id
+    # pun.user = current_account
+    pun.save
     render json: pun
   end
 
