@@ -21,22 +21,22 @@ class PunContainer extends Component {
 
   handleQuerySubmit(query){
     let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
-    console.log(URL)
     axios.get(URL)
       .then( res => this.setState({ random_gif: res.data.data }))
+      // .then( res => console.log('you are getting this response after GET', res.data.data)) // 1 object
       // this.props.history.push('/random')
   }
 
   handleSubmit(punInput){
-    let GIF_URL = 'http://localhost:3000/api/v1/gifs'
-    axios.post(GIF_URL, {
-      gif: { url: this.state.random_gif.image_url }
-    })
+    // let GIF_URL = 'http://localhost:3000/api/v1/gifs'
+    // axios.post(GIF_URL, {
+    //   gif: { url: this.state.random_gif.image_url }
+    // })
 
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
-      pun: { pun: punInput },
-      gif: { url: this.state.random_gif.image_url }
+      gif: { url: this.state.random_gif.image_url },
+      pun: { pun: punInput }
     })
       .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
   }
@@ -52,8 +52,8 @@ class PunContainer extends Component {
   //
   //   return mm+'/'+dd+'/'+yyyy;
   // }
-
   render(){
+    console.log('url: ', this.state.random_gif.image_url)
     return(
       <div>
         <SearchForm query={this.state.query} onSubmit={this.handleQuerySubmit.bind(this)}/>
