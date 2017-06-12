@@ -1,26 +1,26 @@
 class ApplicationController < ActionController::API
   private
 
-  def authorize_account
-    if token.present?
-      if !current_ account.present?
-        render json: {error: 'Token invalid'}
-      end
-    else
-      render json: {error: 'No Authorization Present'} and return
+  def authorize_account!
+    if !current_account.present?
+      render json: {error: 'Authorization invalid'}
     end
   end
 
   def current_account
     decoded = decode(token)
-    current_account = Account.find_by(id: decoded.first['account_id'])
+    if decoded.present?
+      current_account ||= Account.find_by(id: decoded.first['account_id'])
+    end
   end
 
   def decode(token)
-    decoded = JWT.decode(token, ENV['JWT_SECRET'], true, {algorithm: ENV['JWT_ALGORITHM']})
+    JWT.decode(token, ENV['JWT_SECRET'], true, {algorithm: ENV['JWT_ALGORITHM']})
+    rescue JWT::DecodeError
+      return nil
   end
 
   def token
-    token = request.headers['Authorization']
+    request.headers['Authorization']
   end
 end

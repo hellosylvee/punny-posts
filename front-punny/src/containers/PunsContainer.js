@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import DisplaySearchedRandomGifWithPun from '../components/DisplaySearchedRandomGifWithPun'
+// import DisplaySearchedSearchGifWithPun from '../components/DisplaySearchedSearchGifWithPun'
 import SearchForm from '../components/SearchForm'
-import RandomGif from '../components/RandomGif'
+import SearchGif from '../components/SearchGif'
 // import TopicsList from '../components/home/TopicsList'
 // import GifList from '../components/GifList'
 import PunsList from '../components/PunsList'
@@ -13,9 +13,8 @@ class PunContainer extends Component {
     super()
     this.state = {
       query: '',
-      random_gif: {},
-      gif_id: '',
-      puns: []
+      random_gif: {}, //1 object
+      puns: [] //array
     }
   }
 
@@ -23,41 +22,26 @@ class PunContainer extends Component {
     let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
     axios.get(URL)
       .then( res => this.setState({ random_gif: res.data.data }))
-      // .then( res => console.log('you are getting this response after GET', res.data.data)) // 1 object
-      // this.props.history.push('/random')
   }
 
   handleSubmit(punInput){
-    // let GIF_URL = 'http://localhost:3000/api/v1/gifs'
-    // axios.post(GIF_URL, {
-    //   gif: { url: this.state.random_gif.image_url }
-    // })
-
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
       gif: { url: this.state.random_gif.image_url },
-      pun: { pun: punInput }
+      pun: { pun: punInput },
+      user: { first_name: 'sylvee'}
     })
-      .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
+      .then( res => this.setState(
+        prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
+    // this.props.history.push('/puns/:id')
   }
 
-  // getTodaysDate() {
-  //   let today = new Date();
-  //   let dd = today.getDate();
-  //   let mm = today.getMonth()+1;
-  //   let yyyy = today.getFullYear();
-  //
-  //   if(dd < 10) { dd = '0' + dd }
-  //   if(mm < 10) { mm = '0' + mm }
-  //
-  //   return mm+'/'+dd+'/'+yyyy;
-  // }
   render(){
     console.log('url: ', this.state.random_gif.image_url)
     return(
       <div>
         <SearchForm query={this.state.query} onSubmit={this.handleQuerySubmit.bind(this)}/>
-        <RandomGif random_gif={this.state.random_gif}/>
+        <SearchGif random_gif={this.state.random_gif}/>
         {/* <TodaysDate today={this.getTodaysDate()}/> */}
         {/* <GifList gifs={this.state.gifs} /> */}
         <Form onSubmit={this.handleSubmit.bind(this)}/>

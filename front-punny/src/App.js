@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 
-import PunContainer from './containers/PunContainer'
-import RandomContainer from './containers/RandomContainer'
+import PunsContainer from './containers/PunsContainer'
+import TodaysContainer from './containers/TodaysContainer'
+import ProfileContainer from './containers/ProfileContainer'
 
 // import Topics from './components/home/Topics'
 
@@ -23,8 +24,8 @@ class App extends Component {
       localStorage.setItem('jwtToken', token)
       setAuthorizationToken(token)
       console.log('success!')
+      // this.history.push('/home')
       // window.location = res.data.redirect;
-      // this.history.push('/today')
     })
 
     // .then(res => console.log('what do i get here?', res))
@@ -36,14 +37,14 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route exact path='/' component={PunContainer} />
-          <Route path='/random' component={RandomContainer} />
+          <Route exact path='/' component={PunsContainer} />
           <Route
-            path='/today'
-            render={() => <h1>This is where the pun of the day will be displayed</h1>} />
+            path='/today' component={TodaysContainer} />
           <Route
             path='/new'
             render={() => <h1>This is where you will upload your giphy or image!</h1>} />
+          <Route
+            path='/profile' component={ProfileContainer} />
           <Route
             path='/login'
             render={() => <LoginForm handleLogin={this.handleLogin}/>} />

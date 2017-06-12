@@ -2,6 +2,7 @@ import React from 'react'
 import Pun from './Pun'
 
 const PunsList = (props) => {
+  console.log('PUNSLIST: ', props.puns)
   const allPuns = props.puns.map( (pun) => <Pun key={pun.id} pun={pun} /> )
 
   return(

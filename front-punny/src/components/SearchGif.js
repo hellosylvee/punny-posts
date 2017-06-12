@@ -1,7 +1,7 @@
 import React from 'react'
 
-const RandomGif = (props) => {
-  console.log('randomgif', props)
+const SearchGif = (props) => {
+  console.log('SearchGif', props)
   let gif = props.random_gif
 
   return(
@@ -12,4 +12,4 @@ const RandomGif = (props) => {
   )
 }
 
-export default RandomGif
+export default SearchGif
