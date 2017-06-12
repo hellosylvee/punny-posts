@@ -37,7 +37,10 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route exact path='/' component={PunsContainer} />
+          <Route
+            exact path='/puns'
+            render={() => <h1>Welcome to Puns Home Page</h1>}/>
+          <Route exact path='/puns/new' component={PunsContainer} />
           <Route
             path='/today' component={TodaysContainer} />
           <Route

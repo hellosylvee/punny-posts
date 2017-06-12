@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Form extends Component {
+class PunForm extends Component {
   constructor(){
     super()
     this.state = {
@@ -12,7 +12,7 @@ class Form extends Component {
     this.setState({ input: e.target.value })
   }
 
-  handleSubmit(e){
+  handleAddPun(e){
     e.preventDefault()
     this.props.onSubmit(this.state.input)
     this.setState({ input: '' })
@@ -20,7 +20,7 @@ class Form extends Component {
 
   render(){
     return(
-      <form className='form' onSubmit={this.handleSubmit.bind(this)}>
+      <form className='form' onSubmit={this.handleAddPun.bind(this)}>
         <div>Enter a pun</div>
         <textarea
           placeholder="Enter your pun here"
@@ -32,4 +32,4 @@ class Form extends Component {
   }
 }
 
-export default Form
+export default PunForm

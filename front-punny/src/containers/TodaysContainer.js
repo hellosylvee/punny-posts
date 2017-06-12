@@ -3,7 +3,7 @@ import TodaysDate from '../components/today/TodaysDate'
 import TodaysList from '../components/today/TodaysList'
 import PunsList from '../components/PunsList'
 import Pun from '../components/Pun'
-import Form from '../components/Form'
+import PunForm from '../components/PunForm'
 
 import axios from 'axios'
 
@@ -55,7 +55,7 @@ class TodayContainer extends Component {
         <TodaysDate today={this.getTodaysDate()}/>
         <TodaysList gifs={this.state.gifs} />
         <PunsList puns={this.state.puns}/>
-        <Form onSubmit={this.handleSubmit.bind(this)}/>
+        <PunForm onSubmit={this.handleSubmit.bind(this)}/>
       </div>
     )
   }

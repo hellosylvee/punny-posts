@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class SearchForm extends Component {
+class SearchGifForm extends Component {
   constructor(){
     super()
     this.state = {
@@ -12,7 +12,7 @@ class SearchForm extends Component {
     this.setState({ input: e.target.value })
   }
 
-  handleQuerySubmit(e){
+  handleSearchGif(e){
     e.preventDefault()
     this.props.onSubmit(this.state.input)
     this.setState({ input: '' })
@@ -21,7 +21,7 @@ class SearchForm extends Component {
   render(){
     return(
       <div>
-        <form className='search' onSubmit={this.handleQuerySubmit.bind(this)}>
+        <form className='search' onSubmit={this.handleSearchGif.bind(this)}>
           <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
           <button>Search</button>
         </form>
@@ -30,4 +30,4 @@ class SearchForm extends Component {
   }
 }
 
-export default SearchForm
+export default SearchGifForm

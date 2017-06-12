@@ -17,9 +17,3 @@
 end
 
 s = User.create(first_name: 'sylvee', last_name: 'lee', username: 'hisyl', blurb: 'flatiron student', password_digest: 'monkey')
-
-Gif.create(:url => 'http://gph.is/2ryYBFI')
-Gif.create(:url => 'http://gph.is/2r3lLR8')
-Gif.create(:url => 'http://gph.is/2siWBCM')
-Gif.create(:url => 'http://gph.is/2r6jYPX')
-Gif.create(:url => 'http://gph.is/2oPGFnh')
