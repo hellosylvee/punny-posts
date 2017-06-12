@@ -19,13 +19,12 @@ class SearchGifForm extends Component {
   }
 
   render(){
+    // console.log('????? ', this.state)
     return(
-      <div>
-        <form className='search' onSubmit={this.handleSearchGif.bind(this)}>
-          <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
-          <button>Search</button>
-        </form>
-      </div>
+      <form className='search' onSubmit={this.handleSearchGif.bind(this)}>
+        <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
+        <button>Search</button>
+      </form>
     )
   }
 }

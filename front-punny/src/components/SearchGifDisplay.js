@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SearchGifDisplay = (props) => {
-  console.log('SearchGifDisplay', props)
+  // console.log('SearchGifDisplay', props)
   let gif = props.random_gif
 
   return(

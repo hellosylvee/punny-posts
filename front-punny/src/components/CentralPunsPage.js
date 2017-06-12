@@ -1,26 +1,22 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+// import { Route, Switch } from 'react-router-dom'
+import SearchGifForm from './SearchGifForm'
+import SearchGifDisplay from './SearchGifDisplay'
 
-import PunForm from './PunForm'
+// import PunForm from './PunForm'
 // import PunsList from './PunsList'
 
-import axios from 'axios'
-
-const CentralPunsPage = (props) => {
+const PunsPage = (props) => {
   console.log('CENTRALPUNSPAGE', props)
   return(
     <div>
-      <PunForm onSubmit={props.handleAddPun}/>
-      {/* <PunsList puns={props.state.puns}/> */}
+      {<SearchGifForm query={props.query} onSubmit={props.onSubmit} />}
+      {<SearchGifDisplay random_gif={props.random_gif} />}
 
-      <Switch>
-        <Route
-          path='puns/new'
-          render={ ()=> <PunForm onSubmit={props.onSubmit} /> }
-        />
-      </Switch>
+      {/* <PunForm onSubmit={props.handleAddPun}/> */}
+      {/* <PunsList puns={props.state.puns}/> */}
     </div>
   )
 }
 
-export default CentralPunsPage
+export default PunsPage
