@@ -1,7 +1,7 @@
 import React from 'react'
 
-const TodaysGifItem = (props) => {
-  console.log('todays gif hereeeeee ', props.url)
+const TodaysGif = (props) => {
+  // console.log('todays gif hereeeeee ', props.url)
   let url = <img src={props.url} alt="gif here"/>
   return(
     <div className='gif'>
@@ -10,4 +10,4 @@ const TodaysGifItem = (props) => {
   )
 }
 
-export default TodaysGifItem
+export default TodaysGif

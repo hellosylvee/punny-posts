@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
+// import { Route, Link, Switch } from 'react-router-dom'
 
 import Pun from './Pun'
 
@@ -13,7 +13,7 @@ const PunsList = (props) => {
         <h2>Puns</h2>
         { allPuns }
       </div>
-    
+
     </div>
   )
 }

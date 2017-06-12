@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import TodaysDate from '../components/today/TodaysDate'
-import TodaysList from '../components/today/TodaysList'
-import PunsList from '../components/PunsList'
-import Pun from '../components/Pun'
-import PunForm from '../components/PunForm'
+import TodaysPage from '../components/today/TodaysPage'
 
 import axios from 'axios'
 
@@ -11,23 +8,24 @@ class TodayContainer extends Component {
   constructor(){
     super()
     this.state = {
-      query: '',
-      gifs: [],
+      gif: [],
       puns: []
     }
   }
 
   componentDidMount(){
-    let URL = 'http://api.giphy.com/v1/gifs/search?q=hello&api_key=dc6zaTOxFJmzC&limit=1'
+    // let URL = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=random'
+    let URL = 'http://api.giphy.com/v1/gifs/search?q=random&api_key=dc6zaTOxFJmzC&limit=1'
     axios.get(URL)
-      .then( res => this.setState({ gifs: res.data.data }))
+      .then( res => this.setState({ gif: res.data.data }))
 
     let punListURL = 'http://localhost:3000/api/v1/puns'
     axios.get(punListURL)
-      .then( res => this.setState({ puns: res.data }))
+    .then( res => this.setState({ puns: res.data }))
+    // .then( res => console.log(res.data)) //array of objects
   }
 
-  handleSubmit(punInput){
+  handleAddTodaysPun(punInput){
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
       gif: { url: this.state.random_gif.image_url },
@@ -35,6 +33,14 @@ class TodayContainer extends Component {
     })
       .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
     // this.props.history.push('/puns/:id')
+  }
+
+  handleUpdateTodaysPun(punInput){
+    let PUN_URL = 'http://localhost:3000/api/v1/puns'
+    axios.patch(PUN_URL, {
+      pun: { pun: punInput}
+    })
+    .then( res => console.log('UPDATE SUCCESS!'))
   }
 
   getTodaysDate() {
@@ -49,13 +55,17 @@ class TodayContainer extends Component {
     return mm+'/'+dd+'/'+yyyy;
   }
   render(){
-    console.log('CONTAINER', this.state.gifs) //PASSING A FUCKING ARRAY OF OBJECTS
+    console.log('CONTAINER', this.state.gifs)
     return(
       <div>
         <TodaysDate today={this.getTodaysDate()}/>
-        <TodaysList gifs={this.state.gifs} />
-        <PunsList puns={this.state.puns}/>
-        <PunForm onSubmit={this.handleSubmit.bind(this)}/>
+        <TodaysPage
+          // today={this.getTodaysDate()}
+          gif={this.state.gif}
+          puns={this.state.puns}
+          onSubmit={this.handleAddTodaysPun.bind(this)}
+          onUpdate={this.handleUpdateTodaysPun.bind(this)}
+        />
       </div>
     )
   }
