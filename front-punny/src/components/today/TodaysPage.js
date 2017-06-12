@@ -6,7 +6,7 @@ import TodaysGif from './TodaysGif'
 import TodaysPun from './TodaysPun'
 
 import TodaysPunForm from './TodaysPunForm'
-import TodaysPunShow from './TodaysPunShow'
+// import TodaysPunShow from './TodaysPunShow'
 
 const TodaysPage = (props) => {
   // debugger

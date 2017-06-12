@@ -5,7 +5,7 @@ import Pun from './Pun'
 
 const PunsList = (props) => {
   console.log('PUNSLIST: ', props.puns)
-  const allPuns = props.puns.map( (pun) => <Pun key={pun.id} pun={pun} /> )
+  const allPuns = props.puns.map( pun => <Pun key={pun.id} pun={pun} /> )
 
   return(
     <div>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-// import SearchGifForm from '../components/SearchGifForm'
-// import SearchGifDisplay from '../components/SearchGifDisplay'
+
 import CentralPunsPage from '../components/CentralPunsPage'
+
+import SearchGifForm from '../components/SearchGifForm'
+import SearchGifDisplay from '../components/SearchGifDisplay'
+
 // import PunsList from '../components/PunsList'
 // import PunForm from '../components/PunForm'
 import axios from 'axios'
@@ -23,7 +26,7 @@ class PunContainer extends Component {
       .then( res => this.setState({ random_gif: res.data.data }))
   }
 
-  handleSubmit(punInput){
+  handleAddPun(punInput){
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
       gif: { url: this.state.random_gif.image_url },
@@ -39,16 +42,17 @@ class PunContainer extends Component {
     console.log('container: ', this.state.random_gif.image_url)
     return(
       <div>
-        {/* <SearchGifForm query={this.state.query} onSubmit={this.handleQuerySubmit.bind(this)}/> */}
-        {/* <SearchGifDisplay random_gif={this.state.random_gif}/> */}
+        <SearchGifForm
+          query={this.state.query}
+          onSubmit={this.handleSearchGif.bind(this)}/>
+        <SearchGifDisplay random_gif={this.state.random_gif}/>
 
         <CentralPunsPage
-          query={this.state.query}
-          random_gif={this.state.random_gif}
-          onSubmit={this.handleSearchGif.bind(this)}
+          onSubmit={this.handleAddPun.bind(this)}
+          puns={this.state.puns}
         />
-        {/* <PunForm onSubmit={this.handleSubmit.bind(this)}/>
-        <PunsList puns={this.state.puns}/> */}
+        {/* <PunForm onSubmit={this.handleAddPun.bind(this)}/> */}
+        {/* <PunsList puns={this.state.puns}/> */}
       </div>
     )
   }
