@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TodaysGif = (props) => {
-  console.log('TODAYS GIF: ', props.gif)
+  // console.log('TODAYS GIF: ', props.gif)
   // debugger
   var gif = props.gif.images ? props.gif.images.fixed_height.url : null
 

@@ -2,15 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const TodaysPun = (props) => {
-  console.log('This is one pun item: ', props)
-  let pun = props.pun
-  // debugger
-  // var pun = props.pun.images ? props.gif.images.fixed_height.url : null
+  console.log('This is one pun item!!!!!!!: ', props)
 
   return(
     <div className='list-item'>
-      { pun }
-      {/* <button><Link to={`/today/${pun.id}/edit`}>edit pun</Link></button> */}
+      <Link to={`/today/puns/${props.punkey}`}>{ props.pun }</Link>
+      {/* <button onClick={this.handle}>edit pun</button> */}
+      {/* <button><Link to={`/today/${props.punkey}/edit`}>edit pun</Link></button> */}
     </div>
   )
 }

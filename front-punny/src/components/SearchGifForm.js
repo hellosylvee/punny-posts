@@ -19,7 +19,6 @@ class SearchGifForm extends Component {
   }
 
   render(){
-    // console.log('????? ', this.state)
     return(
       <form className='search' onSubmit={this.handleSearchGif.bind(this)}>
         <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>

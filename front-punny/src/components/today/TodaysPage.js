@@ -1,28 +1,37 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import TodaysDate from './TodaysDate'
 import TodaysGif from './TodaysGif'
-import TodaysPun from './TodaysPun'
-
 import TodaysPunForm from './TodaysPunForm'
+
+import TodaysPun from './TodaysPun'
 import TodaysPunShow from './TodaysPunShow'
 
 const TodaysPage = (props) => {
-  console.log('TODAYS PAGE', props)
 
-  let puns = props.puns.map( (pun) => <TodaysPun key={pun.id} pun={pun.pun} /> )
+  let TodaysPunComponent = props.puns.map( p => <TodaysPun punkey={p.id} pun={p.pun} /> )
 
+  console.log('todays page: ', props)
+  // debugger
   return(
     <div className='gif'>
       <TodaysGif gif={props.gif}/>
       <TodaysPunForm onSubmit={props.onSubmit}/>
-      <div>{puns}</div>
-
-      <Switch>}
-        {/* <Route exact path='/today/:id' /> */}
-        {/* <Route path='puns/:id/edit'/> */}
-      </Switch>
+      <div>
+        <Switch>
+          <Route
+            exact path='/today/puns/:id'
+            render={ ({match}) => {
+              const pun = props.puns.find(pun => pun.id === parseInt(match.params.id))
+              return <TodaysPunShow pun={pun.pun} /> }} />
+          {/* <Route
+            path='/today/puns/:id/edit'
+            render={ ({match}) => {
+              const pun = props.puns.find( pun => pun.id === parseInt(match.params.id))
+              return <TodaysPunForm pun={pun} onUpdate={props.handleUpdateTodaysPun} /> }} /> */}
+        </Switch>
+      </div>
+      <div>{TodaysPunComponent}</div>
     </div>
   )
 }

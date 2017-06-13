@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+// import PunsList from './PunsList'
 
 const PunShow = (props) => {
   console.log('student show: ', props)
   return (
     <div>
-      This is the show page after a person submits the pun for the gif
+      {/* {<PunsList puns={props.puns}/>} */}
     </div>
   )
 }

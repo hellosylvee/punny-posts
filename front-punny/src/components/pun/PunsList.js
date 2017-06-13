@@ -1,19 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import Pun from './Pun'
+import PunBlock from './PunBlock'
 
 const PunsList = (props) => {
-  // console.log('PUNSLIST: ', props.puns)
-  const allPuns = props.puns.map( pun => <Link to={`/puns/${pun.id}`}><Pun key={pun.id} pun={pun} /></Link> )
 
-  // const allPuns = props.puns.map( pun => console.log(pun.id) )
-
+  const revOrder = props.puns.slice(100).reverse()
+  let allGP = revOrder.map( gp => <PunBlock key={gp.id} id={gp.id} pun={gp.pun} url={gp.gif.url}/> )
   return(
     <div>
       <div className='list'>
-        <h2>Puns</h2>
-        { allPuns }
+        <h2>All the Glorious Puns</h2>
+        {allGP}
       </div>
 
     </div>

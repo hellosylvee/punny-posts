@@ -1,30 +1,27 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-
-
 import PunForm from './pun/PunForm'
 import PunsList from './pun/PunsList'
 
-// import PunShow from './pun/PunShow'
+import PunShow from './pun/PunShow'
 
-const PunsPage = (props) => {
-  // console.log('CENTRALPUNSPAGE', props)
+const CentralPunsPage = (props) => {
+  console.log('central puns page: ', props)
   return(
     <div>
-      {/* {<SearchGifForm query={props.query} onSubmit={props.onSubmit} />}
-      {<SearchGifDisplay random_gif={props.random_gif} />} */}
       {<PunForm onSubmit={props.onSubmit}/>}
       {<PunsList puns={props.puns}/>}
 
       <Switch>
-        {/* <Route
+        <Route
           exact path='/puns/:id'
           render={ ({match}) => {
-            props.puns.find(pun = )}
-        }/> */}
+            const pun = props.puns.find(pun => pun.id === parseInt(match.params.id))
+            return <PunShow pun={pun} /> }
+          }/>
       </Switch>
     </div>
   )
 }
 
-export default PunsPage
+export default CentralPunsPage

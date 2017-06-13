@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import TodaysPun from './TodaysPun'
 
 class TodaysPunShow extends Component {
-  constructor(){
-    super()
-  }
-
   render(){
     console.log('student show: ')
     return (
-      <div>
-        This is the show page after a person submits the pun for the gif
+      <div className='punshow'>
+        HEY THERE!
       </div>
     )
   }
 }
 
 export default TodaysPunShow
+
+//Make changes such as updating/deleting a pun
+
+//gif
+//form with existing pun setence
+//delete button and save button

@@ -34,8 +34,15 @@
   margin-top: 50px;
 }
 
-.list-item {
+.list-block {
   border: dotted purple 2px;
+  /*display: inline-block;*/
+  /*float: left;*/
+}
+
+.list-gif img {
+  width: 20%;
+  display: inline;
 }
 
 .form {
@@ -51,8 +58,17 @@
   text-align: center;
 }
 
+.punshow {
+  border: solid black 2px;
+  margin-top: 20px;
+}
+
 span {
   padding: 0px 20px;
+}
+
+.pungifblock {
+  border: solid green 2px;
 }
 /* make a long list of words, for scope */
 /* create container for api */

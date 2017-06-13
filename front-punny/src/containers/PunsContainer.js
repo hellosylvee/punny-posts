@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 
 import CentralPunsPage from '../components/CentralPunsPage'
-
 import SearchGifForm from '../components/SearchGifForm'
 import SearchGifDisplay from '../components/SearchGifDisplay'
 
-// import PunsList from '../components/PunsList'
-// import PunForm from '../components/PunForm'
 import axios from 'axios'
 
 class PunContainer extends Component {
@@ -17,6 +14,12 @@ class PunContainer extends Component {
       random_gif: {}, //1 object
       puns: [] //array of objects
     }
+  }
+
+  componentWillMount(){
+    let PUN_URL = 'http://localhost:3000/api/v1/puns'
+    axios.get(PUN_URL)
+      .then( res => this.setState({ puns: res.data }))
   }
 
   handleSearchGif(query){
@@ -33,13 +36,17 @@ class PunContainer extends Component {
       pun: { pun: punInput },
       user: { first_name: 'sylvee'}
     })
-      .then( res => this.setState(
-        prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
-    // this.props.history.push('/puns/:id')
+      .then( res => { console.log('container: ', res.data )
+        this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
+
+        // this.props.history.push(`/puns/${res.data.id}`)
+      })
+      // this.props.history.push('/puns/:id')
+
   }
 
   render(){
-    console.log('container: ', this.state.random_gif.image_url)
+    console.log('container: ', this.state)
     return(
       <div>
         <SearchGifForm
