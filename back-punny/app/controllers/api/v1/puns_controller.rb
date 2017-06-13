@@ -10,7 +10,8 @@
     gif = Gif.create(url: params[:gif][:url])
     pun = Pun.new(pun_params)
     pun.gif_id = gif.id
-    user = User.create(first_name: params[:user][:first_name])
+    # user = User.create(first_name: params[:user][:first_name])
+    user = User.find_by(first_name: params[:user][:first_name])
     pun.user_id = user.id
     # pun.user = current_account
 
@@ -28,11 +29,11 @@
     render json: pun
   end
 
-  def delete
-    pun = Pun.find(params[:id])
-    pun.destroy
-    render json: pun
-  end
+  # def destroy
+  #   pun = Pun.find(params[:id])
+  #   pun.destroy
+  #   render json: pun
+  # end
 
   private
 

@@ -1,11 +1,13 @@
 import React from 'react'
-// import { Route, Link, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import Pun from './Pun'
 
 const PunsList = (props) => {
-  console.log('PUNSLIST: ', props.puns)
-  const allPuns = props.puns.map( pun => <Pun key={pun.id} pun={pun} /> )
+  // console.log('PUNSLIST: ', props.puns)
+  const allPuns = props.puns.map( pun => <Link to={`/puns/${pun.id}`}><Pun key={pun.id} pun={pun} /></Link> )
+
+  // const allPuns = props.puns.map( pun => console.log(pun.id) )
 
   return(
     <div>

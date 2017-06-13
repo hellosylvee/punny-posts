@@ -1,11 +1,13 @@
 import React from 'react'
 
 const TodaysGif = (props) => {
-  // console.log('todays gif hereeeeee ', props.url)
-  let url = <img src={props.url} alt="gif here"/>
+  console.log('TODAYS GIF: ', props.gif)
+  // debugger
+  var gif = props.gif.images ? props.gif.images.fixed_height.url : null
+
   return(
     <div className='gif'>
-      {url}
+      <img src={gif} alt={props.gif.type}/>
     </div>
   )
 }

@@ -6,23 +6,22 @@ import TodaysGif from './TodaysGif'
 import TodaysPun from './TodaysPun'
 
 import TodaysPunForm from './TodaysPunForm'
-// import TodaysPunShow from './TodaysPunShow'
+import TodaysPunShow from './TodaysPunShow'
 
 const TodaysPage = (props) => {
-  // debugger
+  console.log('TODAYS PAGE', props)
 
-  let gif = props.gif.map(gif => <TodaysGif key={gif.id} url={gif.images.fixed_height.url}/>)
   let puns = props.puns.map( (pun) => <TodaysPun key={pun.id} pun={pun.pun} /> )
 
-  console.log('TODAYS PAGE', props)
   return(
     <div className='gif'>
-      <div>{gif}</div>
+      <TodaysGif gif={props.gif}/>
+      <TodaysPunForm onSubmit={props.onSubmit}/>
       <div>{puns}</div>
-      <TodaysPunForm onSubmit={props.handleAddTodaysPun}/>
-      <Switch>
-        <Route path='/today' render={() => <TodaysDate today={props.getTodaysDate}/> }/>
-        {/* <Route exact path='/today/:id' render={ ({match})}/> */}
+
+      <Switch>}
+        {/* <Route exact path='/today/:id' /> */}
+        {/* <Route path='puns/:id/edit'/> */}
       </Switch>
     </div>
   )

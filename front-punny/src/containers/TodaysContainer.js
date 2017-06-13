@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodaysDate from '../components/today/TodaysDate'
 import TodaysPage from '../components/today/TodaysPage'
+// import TodaysGif from '../components/today/TodaysGif'
 
 import axios from 'axios'
 
@@ -8,37 +9,43 @@ class TodayContainer extends Component {
   constructor(){
     super()
     this.state = {
-      gif: [],
+      gif: {},
       puns: []
     }
   }
 
   componentDidMount(){
-    // let URL = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=random'
-    let URL = 'http://api.giphy.com/v1/gifs/search?q=random&api_key=dc6zaTOxFJmzC&limit=1'
+    let URL = 'http://api.giphy.com/v1/gifs/trending?&api_key=dc6zaTOxFJmzC&limit=1'
     axios.get(URL)
-      .then( res => this.setState({ gif: res.data.data }))
+      .then( res => this.setState({ gif: res.data.data[0] }))
+      // .then( res => console.log(res.data.data[0]))
 
     let punListURL = 'http://localhost:3000/api/v1/puns'
     axios.get(punListURL)
     .then( res => this.setState({ puns: res.data }))
+    // debugger
     // .then( res => console.log(res.data)) //array of objects
   }
 
   handleAddTodaysPun(punInput){
-    let PUN_URL = 'http://localhost:3000/api/v1/puns'
+    const PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.post(PUN_URL, {
-      gif: { url: this.state.random_gif.image_url },
-      pun: { pun: punInput }
+      gif: { url: this.state.gif.image_url },
+      pun: { pun: punInput },
+      user: { first_name: 'sylvee'}
     })
-      .then( res => this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun]}) ) )
-    // this.props.history.push('/puns/:id')
+      .then( res => {
+        this.setState( prevState => ({ puns: [...prevState.puns, res.data.pun] }) )
+        // return console.log('what is this: ', res.data.id), you can also return data
+        return res.data.id
+      })
+        // .then( id => this.props.history.push(`/today/${id}`))
   }
 
   handleUpdateTodaysPun(punInput){
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.patch(PUN_URL, {
-      pun: { pun: punInput}
+      pun: { pun: punInput }
     })
     .then( res => console.log('UPDATE SUCCESS!'))
   }
@@ -55,12 +62,12 @@ class TodayContainer extends Component {
     return mm+'/'+dd+'/'+yyyy;
   }
   render(){
-    console.log('CONTAINER', this.state.gifs)
+    // debugger
     return(
       <div>
         <TodaysDate today={this.getTodaysDate()}/>
+        {/* <TodaysGif gif={this.state.gif}/> */}
         <TodaysPage
-          // today={this.getTodaysDate()}
           gif={this.state.gif}
           puns={this.state.puns}
           onSubmit={this.handleAddTodaysPun.bind(this)}
