@@ -22,7 +22,7 @@ const TodaysPage = (props) => {
           <Route
             exact path='/today/puns/:id'
             render={ ({match}) => {
-              const pun = props.puns.find(pun => pun.id === parseInt(match.params.id))
+              const pun = props.puns.find(pun => pun.id === parseInt(match.params.id, 10))
               return <TodaysPunShow pun={pun.pun} /> }} />
           {/* <Route
             path='/today/puns/:id/edit'

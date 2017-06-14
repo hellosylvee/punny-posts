@@ -40,7 +40,7 @@ class App extends Component {
           <Route
             exact path='/'
             render={() => <h1>Welcome to Puns Home Page</h1>}/>
-          <Route exact path='/puns' component={PunsContainer} />
+          <Route path='/puns' component={PunsContainer} />
           <Route
             path='/today' component={TodaysContainer} />
           <Route

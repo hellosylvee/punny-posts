@@ -29,11 +29,11 @@
     render json: pun
   end
 
-  # def destroy
-  #   pun = Pun.find(params[:id])
-  #   pun.destroy
-  #   render json: pun
-  # end
+  def destroy
+    pun = Pun.find(params[:id])
+    pun.destroy
+    render json: pun
+  end
 
   private
 
