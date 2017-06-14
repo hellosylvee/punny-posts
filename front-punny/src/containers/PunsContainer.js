@@ -43,8 +43,27 @@ class PunContainer extends Component {
 
   }
 
+  handleUpdatePun(punUpdate, id){
+    let PUN_URL = `http://localhost:3000/api/v1/puns/${id}` //${id}
+    axios.patch(PUN_URL, {
+      pun: { pun: punUpdate }
+    })
+      .then( res => {
+        const updatedPuns = this.state.puns.map(p => {
+          if(p.id === res.data.id){
+            return res.data
+          } else {
+            return p
+          }
+        })
+        this.setState({ puns: updatedPuns })
+        this.props.history.push('/puns')
+      })
+    console.log('back to container: ', punUpdate)
+  }
+
   handleDeletePun(id){
-    let PUN_URL = `http://localhost:3000/api/v1/puns/${id}`;
+    let PUN_URL = `http://localhost:3000/api/v1/puns/${id}`
     axios.delete(PUN_URL)
     .then( res => {
       const updatedPuns = this.state.puns.filter(pun => pun.id !== id)
@@ -64,6 +83,7 @@ class PunContainer extends Component {
         <SearchGifDisplay random_gif={this.state.random_gif}/>
         <CentralPunsPage
           onSubmit={this.handleAddPun.bind(this)}
+          onUpdate={this.handleUpdatePun.bind(this)}
           onDelete={this.handleDeletePun.bind(this)}
           puns={this.state.puns}
         />

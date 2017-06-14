@@ -45,16 +45,19 @@ class TodayContainer extends Component {
   }
 
   getTodaysDate() {
-    let today = new Date();
-    let dd = today.getDate();
-    let mm = today.getMonth()+1;
-    let yyyy = today.getFullYear();
-
-    if(dd < 10) { dd = '0' + dd }
-    if(mm < 10) { mm = '0' + mm }
-
-    return mm+'/'+dd+'/'+yyyy;
+    var today = new Date();
   }
+
+  getPrevDate() {
+    var prev = new Date();
+    prev.setDate(prev.getDate() - 1);
+  }
+
+  getNextDate() {
+    var next = new Date();
+    next.setDate(next.getDate() + 1);
+  }
+
   render(){
     return(
       <div>
@@ -69,5 +72,17 @@ class TodayContainer extends Component {
   }
 }
 
-
 export default TodayContainer
+
+// let today = new Date();
+// let dd = today.getDate();
+// let mm = today.getMonth()+1;
+// let yyyy = today.getFullYear();
+//
+// if(dd < 10) { dd = '0' + dd }
+// if(mm < 10) { mm = '0' + mm }
+//
+// return mm+'/'+dd+'/'+yyyy;
+
+// var UTC = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+// return UTC

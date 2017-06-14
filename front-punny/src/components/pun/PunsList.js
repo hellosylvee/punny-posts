@@ -7,7 +7,16 @@ const PunsList = (props) => {
 
   // let allGP = revOrder.map( gp => <Link to={`/puns/${gp.id}`}><PunBlock key={gp.id} id={gp.id} pun={gp.pun} url={gp.gif.url}/></Link> )
   // console.log('punslist', props)
-  let allGP = revOrder.map( gp => <PunBlock key={gp.id} id={gp.id} pun={gp.pun} url={gp.gif.url}/> )
+  let allGP = revOrder.map( gp => (
+    <PunBlock
+      key={gp.id}
+      id={gp.id}
+      pun={gp.pun}
+      url={gp.gif.url}
+      onUpdate={props.onUpdate}
+      onDelete={props.onDelete}
+    />
+  ))
   return(
     <div>
       <div className='list'>

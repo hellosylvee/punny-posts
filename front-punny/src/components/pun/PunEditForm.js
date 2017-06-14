@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { Form, TextArea } from 'semantic-ui-react'
+import { Form, Input, Button, Icon } from 'semantic-ui-react'
 
 class PunEditForm extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    console.log('puneditform: ', props)
+    super(props)
     this.state = {
-      input: ''
+      input: this.props.pun
     }
   }
 
@@ -13,20 +14,38 @@ class PunEditForm extends Component {
     this.setState({ input: e.target.value })
   }
 
-  handleAddPun(e){
+  handleUpdatePun(e){
     e.preventDefault()
-    this.props.onSubmit(this.state.input)
+    // debugger
+    this.props.onUpdate(this.state.input, this.props.id)
     this.setState({ input: '' })
   }
 
+  handleDeletePun(){
+    console.log('clicked!: ', this.props)
+    this.props.onDelete(this.props.id)
+
+  }
+
   render(){
+    console.log('puneditform', this.state)
     return(
-      <Form onSubmit={this.handleAddPun.bind(this)}>
-        <TextArea
-          placeholder="Enter your pun here"
-          onChange={this.handleInputChange.bind(this)}
-        />
-      </Form>
+      <div>
+        <Button
+          onClick={() => this.handleDeletePun()}
+          default>
+          Delete
+        </Button>
+        <Form onSubmit={this.handleUpdatePun.bind(this)}>
+          <Input
+            value={this.state.input}
+            onChange={this.handleInputChange.bind(this)}
+          />
+          <Button primary>
+            Save <Icon name='right chevron' />
+          </Button>
+        </Form>
+    </div>
     )
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TodaysPun from './TodaysPun'
+// import TodaysPun from './TodaysPun'
 
 class TodaysPunShow extends Component {
   render(){

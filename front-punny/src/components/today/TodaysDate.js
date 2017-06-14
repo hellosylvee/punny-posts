@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 const TodaysDate = (props) => {
+
   return(
     <div className='date'>
       <h1>Puns of the Day</h1>

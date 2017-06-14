@@ -2,7 +2,9 @@
    before_action
 
   def index
-    puns = Pun.all
+    # puns = Pun.all
+    # render json: puns
+    puns = Pun.todays_puns
     render json: puns
   end
 
@@ -10,7 +12,6 @@
     gif = Gif.create(url: params[:gif][:url])
     pun = Pun.new(pun_params)
     pun.gif_id = gif.id
-    # user = User.create(first_name: params[:user][:first_name])
     user = User.find_by(first_name: params[:user][:first_name])
     pun.user_id = user.id
     # pun.user = current_account
@@ -33,6 +34,15 @@
     pun = Pun.find(params[:id])
     pun.destroy
     render json: pun
+  end
+
+  def show_todays
+    # selected_day_puns = Pun.todays_puns
+    # something kind of like this...
+    # with the request, send along date you are looking for
+    # date = Date.parse(params[:day])
+    # puns = Pun.puns_by_day(date)
+    # render json: selected_day_puns
   end
 
   private

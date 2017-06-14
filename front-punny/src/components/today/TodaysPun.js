@@ -7,8 +7,6 @@ const TodaysPun = (props) => {
   return(
     <div className='list-item'>
       <Link to={`/today/puns/${props.punkey}`}>{ props.pun }</Link>
-      {/* <button onClick={this.handle}>edit pun</button> */}
-      {/* <button><Link to={`/today/${props.punkey}/edit`}>edit pun</Link></button> */}
     </div>
   )
 }

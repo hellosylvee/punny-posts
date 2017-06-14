@@ -8,10 +8,11 @@ import TodaysPun from './TodaysPun'
 import TodaysPunShow from './TodaysPunShow'
 
 const TodaysPage = (props) => {
+  //abstract based on gif.url
+  const revOrder = props.puns.slice(0).reverse()
+  let TodaysPunComponent = revOrder.map( p => <TodaysPun punkey={p.id} pun={p.pun} /> )
 
-  let TodaysPunComponent = props.puns.map( p => <TodaysPun punkey={p.id} pun={p.pun} /> )
-
-  console.log('todays page: ', props)
+  console.log('todays page: ', props.puns)
   // debugger
   return(
     <div className='gif'>

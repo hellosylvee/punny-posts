@@ -24,7 +24,7 @@ const CentralPunsPage = (props) => {
             return <PunBlock pun={pun} /> } }
         /> */}
       </Switch>
-      {<PunsList puns={props.puns}/>}
+      {<PunsList puns={props.puns} onDelete={props.onDelete} onUpdate={props.onUpdate}/>}
     </div>
   )
 }

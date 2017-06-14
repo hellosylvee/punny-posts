@@ -5,8 +5,6 @@ import PunsContainer from './containers/PunsContainer'
 import TodaysContainer from './containers/TodaysContainer'
 import ProfileContainer from './containers/ProfileContainer'
 
-// import Topics from './components/home/Topics'
-
 import NavBar from './components/NavBar'
 import LoginForm from './components/LoginForm'
 
@@ -58,5 +56,3 @@ class App extends Component {
 }
 
 export default App;
-
-//Display all of your routes here

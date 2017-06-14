@@ -22,9 +22,9 @@ class TodaysPunForm extends Component {
     // console.log('TODAYS PUNS FORM', this.state)
     return(
       <form className='form' onSubmit={this.handleAddPun.bind(this)}>
-        <div>Enter a pun</div>
         <textarea
           placeholder="Enter your pun here"
+          value={this.state.input}
           onChange={this.handleInputChange.bind(this)}>
         </textarea>
         <button>Submit Pun</button>
