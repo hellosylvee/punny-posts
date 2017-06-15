@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import PunBlock from './PunBlock'
 
 const PunsList = (props) => {
@@ -20,10 +19,8 @@ const PunsList = (props) => {
   ))
   return(
     <div>
-      <div className='list'>
-        <h2>All the Glorious Puns</h2>
-        {allGP}
-      </div>
+      <h2>All the Glorious Puns</h2>
+      {allGP}
     </div>
   )
 }

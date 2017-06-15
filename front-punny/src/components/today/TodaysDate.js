@@ -1,17 +1,29 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
+import { Header, Button } from 'semantic-ui-react'
 
 const TodaysDate = (props) => {
   console.log('todays DATE: ', props)
   return(
     <div className='date'>
-      <h1>Puns of the Day</h1>
-      <h1>{props.date}</h1>
-      <div className='date-picker'>
-        <Button onClick={()=>props.onPrevDay()}>prev day</Button>
-        <Button onClick={()=>props.onToday()}>today</Button>
-        <Button onClick={()=>props.onNextDay()}>next day</Button>
-      </div>
+      <Header as='h1'>Punny Post of the Day</Header>
+      <Header as='h1'>{props.date}</Header>
+        <Button
+          size='large'
+          content='prev'
+          icon='left arrow'
+          labelPosition='left'
+          onClick={()=>props.onPrevDay()} />
+        <Button
+          color='teal'
+          size='massive'
+          content='TODAY'
+          onClick={()=>props.onToday()} />
+        <Button
+          size='large'
+          content='next'
+          icon='right arrow'
+          labelPosition='right'
+          onClick={()=>props.onNextDay()} />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 class Pun < ApplicationRecord
+  has_many :likes
   belongs_to :user, optional: true
   belongs_to :gif, optional: true
 

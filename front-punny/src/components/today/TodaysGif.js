@@ -1,4 +1,5 @@
 import React from 'react'
+import { Image } from 'semantic-ui-react'
 
 const TodaysGif = (props) => {
   // console.log('TODAYS GIF: ', props.gif)
@@ -7,7 +8,7 @@ const TodaysGif = (props) => {
 
   return(
     <div className='gif'>
-      <img src={gif} alt={props.gif.type}/>
+      <Image src={gif} alt={props.gif.type} shape='rounded' bordered fluid />
     </div>
   )
 }

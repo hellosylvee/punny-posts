@@ -21,25 +21,6 @@
   padding: 10px;
 }
 
-.list {
-  border: solid orange 3px;
-  margin-top: 50px;
-}
-
-.list-block {
-  border: dotted purple 2px;
-  margin: 0;
-  display: inline-block;
-}
-
-.date-picker {
-  border: solid green 1px;
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .punshow {
   border: solid black 2px;
   margin-top: 20px;
@@ -47,4 +28,12 @@
 
 .pls {
   padding-left: 16px;
+}
+
+.prs {
+  padding-right: 16px;
+}
+
+.ui.segment.body-content {
+  padding: 36px;
 }

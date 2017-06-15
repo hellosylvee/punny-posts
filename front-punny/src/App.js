@@ -39,8 +39,7 @@ class App extends Component {
             exact path='/'
             render={() => <h1>Welcome to Puns Home Page</h1>}/>
           <Route path='/puns' component={PunsContainer} />
-          <Route
-            path='/today' component={TodaysContainer} />
+          <Route path='/today' component={TodaysContainer} />
           <Route
             path='/new'
             render={() => <h1>This is where you will upload your giphy or image!</h1>} />

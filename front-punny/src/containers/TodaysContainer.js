@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TodaysDate from '../components/today/TodaysDate'
 import TodaysPage from '../components/today/TodaysPage'
 
+import { Grid } from 'semantic-ui-react'
 import axios from 'axios'
 
 class TodayContainer extends Component {
@@ -13,7 +14,8 @@ class TodayContainer extends Component {
     this.state = {
       gif: {},
       puns: [],
-      date: date
+      date: date,
+      likes: 0
     }
   }
 
@@ -24,7 +26,11 @@ class TodayContainer extends Component {
 
     let punListURL = 'http://localhost:3000/api/v1/puns'
     axios.get(punListURL + `?date=${this.state.date}`)
-    .then( res => this.setState({ puns: res.data })) //array of objects
+    .then( res => this.setState({
+      puns: res.data,  //array of objects
+      likes: 10
+    }))
+    // .then(res => console.log('compondidmount: ', res.data)) //array of obj, containing gif obj, user obj, and id
   }
 
   handleAddTodaysPun(punInput){
@@ -38,14 +44,6 @@ class TodayContainer extends Component {
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
       })
   }
-
-  // handleUpdateTodaysPun(punInput){
-  //   let PUN_URL = 'http://localhost:3000/api/v1/puns'
-  //   axios.patch(PUN_URL, {
-  //     pun: { pun: punInput }
-  //   })
-  //   .then( res => this.setState({ pun: res.data.pun }))
-  // }
 
   getTodaysDate(){
     var date = new Date().toJSON().slice(0,10).replace(/-/g,'/')
@@ -92,24 +90,27 @@ class TodayContainer extends Component {
   render(){
     console.log('container: ', this.state)
     return(
-      <div>
-        <TodaysDate
-          date={this.state.date}
-          onToday={this.getTodaysDate.bind(this)}
-          onPrevDay={this.getPrevDate.bind(this)}
-          onNextDay={this.getNextDate.bind(this)}
-        />
-        <TodaysPage
-          gif={this.state.gif}
-          puns={this.state.puns}
-          onSubmit={this.handleAddTodaysPun.bind(this)}
-          // onUpdate={this.handleUpdateTodaysPun.bind(this)}
-        />
-      </div>
+      <Grid>
+        <Grid.Row centered columns={2}>
+          <TodaysDate
+            date={this.state.date}
+            onToday={this.getTodaysDate.bind(this)}
+            onPrevDay={this.getPrevDate.bind(this)}
+            onNextDay={this.getNextDate.bind(this)}
+          />
+        </Grid.Row>
+        <Grid.Row centered columns={2}>
+          <TodaysPage
+            gif={this.state.gif}
+            puns={this.state.puns}
+            likes={this.state.likes} //just a #
+            onSubmit={this.handleAddTodaysPun.bind(this)}
+          />
+        </Grid.Row>
+      </Grid>
     )
   }
 }
-
 
 export default TodayContainer
 

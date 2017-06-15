@@ -1,4 +1,4 @@
 class Like < ApplicationRecord
-  belongs_to :pun
   belongs_to :user
+  belongs_to :pun
 end

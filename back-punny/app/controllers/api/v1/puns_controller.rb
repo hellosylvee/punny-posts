@@ -17,6 +17,7 @@ require 'date'
     pun.gif_id = gif.id
     user = User.find_by(first_name: params[:user][:first_name])
     pun.user_id = user.id
+    # like = Like.new
     # pun.user = current_account
 
     pun.save
@@ -39,15 +40,16 @@ require 'date'
     render json: pun
   end
 
-  def show_todays
-    puns = Pun.todays_puns
-    date = Date.parse(params[:date])
-    puns = Pun.puns_by_day(date)
+  def show_all
+    # puns = Pun.todays_puns
+    # date = Date.parse(params[:date])
+    # puns = Pun.puns_by_day(date)
+    # render json: puns
+
     # something kind of like this...
     # with the request, send along date you are looking for
     # date = Date.parse(params[:day])
     # puns = Pun.puns_by_day(date)
-    render json: puns
   end
 
   private
