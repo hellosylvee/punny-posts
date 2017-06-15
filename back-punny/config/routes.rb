@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       resources :gifs, only: [:index, :create, :show]
       resources :users, only: [:index, :create, :show]
       post '/auth', to: 'auth#create'
-      # get '/today', to: 'puns#show_todays'
+      get '/today', to: 'puns#show_todays'
     end
   end
 end

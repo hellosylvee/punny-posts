@@ -1,19 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 
 const TodaysDate = (props) => {
-
+  console.log('todays DATE: ', props)
   return(
     <div className='date'>
       <h1>Puns of the Day</h1>
-      <h1>{props.today}</h1>
+      <h1>{props.date}</h1>
       <div className='date-picker'>
-        <span><Link to='/today' onClick={this.showPrevDate}>prev day</Link></span>
-        <span><Link to='/today'>today</Link></span>
-        <span><Link to='/today'>next day</Link></span>
+        <Button onClick={()=>props.onPrevDay()}>prev day</Button>
+        <Button onClick={()=>props.onToday()}>today</Button>
+        <Button onClick={()=>props.onNextDay()}>next day</Button>
       </div>
     </div>
   )
 }
 
 export default TodaysDate
+
+
+// class TodaysDate extends Component {
+//
+//   render(){
+//     console.log('todays DATE: ', props)
+//     return(
+//       <div className='date'>
+//         <h1>Puns of the Day</h1>
+//         <h1>{props.date}</h1>
+//         <div className='date-picker'>
+//           <Button onClick={()=>props.onPrevDay()}>prev day</Button>
+//           <Button onClick={()=>props.onToday()}>today</Button>
+//           <Button onClick={()=>props.onNextDay()}>next day</Button>
+//         </div>
+//       </div>
+//     )
+//   }
+// }

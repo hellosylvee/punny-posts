@@ -1,16 +1,16 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+// import { Switch, Route } from 'react-router-dom'
 
 import TodaysGif from './TodaysGif'
 import TodaysPunForm from './TodaysPunForm'
 
 import TodaysPun from './TodaysPun'
-import TodaysPunShow from './TodaysPunShow'
+// import TodaysPunShow from './TodaysPunShow'
 
 const TodaysPage = (props) => {
-  //abstract based on gif.url
+  // debugger
   const revOrder = props.puns.slice(0).reverse()
-  let TodaysPunComponent = revOrder.map( p => <TodaysPun punkey={p.id} pun={p.pun} /> )
+  let TodaysPunComponent = revOrder.map( p => <TodaysPun id={p.id} pun={p.pun} /> )
 
   console.log('todays page: ', props.puns)
   // debugger
@@ -19,18 +19,18 @@ const TodaysPage = (props) => {
       <TodaysGif gif={props.gif}/>
       <TodaysPunForm onSubmit={props.onSubmit}/>
       <div>
-        <Switch>
+        {/* <Switch>
           <Route
             exact path='/today/puns/:id'
             render={ ({match}) => {
               const pun = props.puns.find(pun => pun.id === parseInt(match.params.id, 10))
               return <TodaysPunShow pun={pun.pun} /> }} />
-          {/* <Route
+          <Route
             path='/today/puns/:id/edit'
             render={ ({match}) => {
               const pun = props.puns.find( pun => pun.id === parseInt(match.params.id))
-              return <TodaysPunForm pun={pun} onUpdate={props.handleUpdateTodaysPun} /> }} /> */}
-        </Switch>
+              return <TodaysPunForm pun={pun} onUpdate={props.handleUpdateTodaysPun} /> }} />
+        </Switch> */}
       </div>
       <div>{TodaysPunComponent}</div>
     </div>

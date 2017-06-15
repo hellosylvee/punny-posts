@@ -1,10 +1,12 @@
+require 'date'
+
  class Api::V1::PunsController < ApplicationController
    before_action
 
   def index
-    # puns = Pun.all
-    # render json: puns
-    puns = Pun.todays_puns
+    # puns = Pun.todays_puns
+    date = Date.parse(params[:date])
+    puns = Pun.puns_by_day(date)
     render json: puns
   end
 

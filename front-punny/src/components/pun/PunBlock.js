@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import PunEditForm from './PunEditForm'
-import { Card, Icon, Image, Modal, Button, Header } from 'semantic-ui-react'
+import { Card, Icon, Image, Modal, Header } from 'semantic-ui-react'
 
 
 const PunBlock = (props) => {
