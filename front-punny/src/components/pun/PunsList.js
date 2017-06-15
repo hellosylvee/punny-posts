@@ -13,6 +13,7 @@ const PunsList = (props) => {
       id={gp.id}
       pun={gp.pun}
       url={gp.gif.url}
+      updated={gp.updated_at}
       onUpdate={props.onUpdate}
       onDelete={props.onDelete}
     />

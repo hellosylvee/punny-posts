@@ -31,11 +31,11 @@ class PunEditForm extends Component {
     console.log('puneditform', this.state)
     return(
       <div>
-        <Button
+        {/* <Button
           onClick={() => this.handleDeletePun()}
           default>
           Delete
-        </Button>
+        </Button> */}
         <Form onSubmit={this.handleUpdatePun.bind(this)}>
           <Input
             value={this.state.input}

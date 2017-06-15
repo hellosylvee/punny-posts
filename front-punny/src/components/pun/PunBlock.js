@@ -5,22 +5,20 @@ import { Card, Icon, Image, Modal, Header } from 'semantic-ui-react'
 
 
 const PunBlock = (props) => {
-  console.log('punBlock rendering', props);
+  // console.log('punBlock rendering', props);
   return(
 <div>
   <Card>
     <Image src={props.url} />
     <Card.Content>
       <Card.Header>{props.pun}</Card.Header>
-      {/* <Card.Description>{props.pun}</Card.Description> */}
-      {/* <Card.Meta><span className='date'>Punned at 2015</span></Card.Meta> */}
+      <Card.Description>{props.pun}</Card.Description>
+      <Card.Meta>{props.updated}</Card.Meta>
     </Card.Content>
     <Card.Content extra>
-        {/* <a><Icon name='like' /></a> */}
-        {/* <a onClick={() => <PunModal pun={props.pun}/>}>view</a> */}
-        {/* <Link to={`/puns/${props.id}/edit`}>edit</Link> */}
+        <a><Icon name='like' /></a>
       <a onClick={() => props.onDelete(props.id)}>Delete<Icon name='delete'/></a>
-      <Modal trigger={<a>View Pun</a>}>
+      <Modal trigger={<a>Edit Pun</a>}>
         <Modal.Header>Edit Your Pun</Modal.Header>
         <Modal.Content image>
           <Image wrapped size='medium' src={props.url} />

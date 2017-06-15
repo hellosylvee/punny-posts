@@ -4,9 +4,10 @@ require 'date'
    before_action
 
   def index
+    puns = Pun.all
     # puns = Pun.todays_puns
-    date = Date.parse(params[:date])
-    puns = Pun.puns_by_day(date)
+    # date = Date.parse(params[:date])
+    # puns = Pun.puns_by_day(date)
     render json: puns
   end
 
@@ -39,12 +40,14 @@ require 'date'
   end
 
   def show_todays
-    # selected_day_puns = Pun.todays_puns
+    puns = Pun.todays_puns
+    date = Date.parse(params[:date])
+    puns = Pun.puns_by_day(date)
     # something kind of like this...
     # with the request, send along date you are looking for
     # date = Date.parse(params[:day])
     # puns = Pun.puns_by_day(date)
-    # render json: selected_day_puns
+    render json: puns
   end
 
   private

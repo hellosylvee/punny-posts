@@ -32,7 +32,7 @@ class TodayContainer extends Component {
     axios.post(PUN_URL, {
       gif: { url: this.state.gif.images.fixed_height.url },
       pun: { pun: punInput },
-      user: { first_name: 'sylvee'}
+      user: { first_name: 'Mario'}
     })
       .then( res => {
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
@@ -77,7 +77,7 @@ class TodayContainer extends Component {
     var curr = this.state.date
         curr = curr.split('/')
     var [yyyy, mm, dd] = curr
-    var nd = parseInt(dd) + 1
+    var nd = parseInt(dd, 0) + 1
     var nn = nd.toString()
     let nextDay = yyyy + '/' + mm + '/' + nn
 
