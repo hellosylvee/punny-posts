@@ -23,7 +23,6 @@ class PunContainer extends Component {
   }
 
   handleSearchGif(query){
-    // console.log('what is this query', query)
     let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
     axios.get(URL)
       .then( res => this.setState({ random_gif: res.data.data }))
@@ -37,8 +36,7 @@ class PunContainer extends Component {
       user: { first_name: 'sylvee'}
     })
       .then( res => { console.log('container: ', res.data )
-        this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )//,
-        // this.props.history.push(`/puns/${res.data.id}`)
+        this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
       })
 
   }
@@ -73,6 +71,16 @@ class PunContainer extends Component {
     })
   }
 
+  handleAddLike(props){
+    console.log('WHAT THE FCUK IS THIS?', props)
+    let LIKE_URL = `http://localhost:3000/api/v1/likes`
+    axios.post(LIKE_URL, {
+      pun: { id: props.id },
+      user: { id: props.user.id }
+    })
+      this.props.history.push('/puns');
+  }
+
   render(){
     console.log('container: ', this.state)
     return(
@@ -85,10 +93,9 @@ class PunContainer extends Component {
           onSubmit={this.handleAddPun.bind(this)}
           onUpdate={this.handleUpdatePun.bind(this)}
           onDelete={this.handleDeletePun.bind(this)}
+          addLike={this.handleAddLike.bind(this)}
           puns={this.state.puns}
         />
-        {/* <PunForm onSubmit={this.handleAddPun.bind(this)}/> */}
-        {/* <PunsList puns={this.state.puns}/> */}
       </div>
     )
   }

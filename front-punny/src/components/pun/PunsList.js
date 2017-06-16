@@ -11,10 +11,13 @@ const PunsList = (props) => {
       key={gp.id}
       id={gp.id}
       pun={gp.pun}
+      user={gp.user}
       url={gp.gif.url}
+      likes={gp.likes}
       updated={gp.updated_at}
       onUpdate={props.onUpdate}
       onDelete={props.onDelete}
+      addLike={props.addLike}
     />
   ))
   return(

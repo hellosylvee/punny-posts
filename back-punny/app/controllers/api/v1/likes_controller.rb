@@ -7,8 +7,9 @@ class Api::V1::LikesController < ApplicationController
   end
 
   def create
-    like = Like.new(like_params)
-    like.user_id = user.id && like.pun_id = pun.id
+    like = Like.new
+    like.user_id = User.find(params[:user][:id]).id
+    like.pun_id = Pun.find(params[:pun][:id]).id
     like.save
     render json: like
   end

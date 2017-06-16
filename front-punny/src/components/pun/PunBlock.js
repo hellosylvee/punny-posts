@@ -12,11 +12,11 @@ const PunBlock = (props) => {
     <Image src={props.url} />
     <Card.Content>
       <Card.Header>{props.pun}</Card.Header>
-      <Card.Description>{props.pun}</Card.Description>
+      <Card.Description>By you</Card.Description>
       <Card.Meta>{props.updated}</Card.Meta>
     </Card.Content>
     <Card.Content extra>
-        <a><Icon name='like' /></a>
+      <a onClick={() => props.addLike(props)}><Icon name='like' />{props.likes}</a>
       <a onClick={() => props.onDelete(props.id)}>Delete<Icon name='delete'/></a>
       <Modal trigger={<a>Edit Pun</a>}>
         <Modal.Header>Edit Your Pun</Modal.Header>
