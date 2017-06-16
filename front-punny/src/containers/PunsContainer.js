@@ -33,7 +33,7 @@ class PunContainer extends Component {
     axios.post(PUN_URL, {
       gif: { url: this.state.random_gif.image_url },
       pun: { pun: punInput },
-      user: { first_name: 'sylvee'}
+      user: { first_name: 'Meagan'}
     })
       .then( res => { console.log('container: ', res.data )
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )

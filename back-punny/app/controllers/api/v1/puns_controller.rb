@@ -4,11 +4,15 @@ require 'date'
    before_action
 
   def index
-    puns = Pun.all
-    # puns = Pun.todays_puns
-    # date = Date.parse(params[:date])
-    # puns = Pun.puns_by_day(date)
-    render json: puns
+    if params[:date]
+      puns = Pun.todays_puns
+      date = Date.parse(params[:date])
+      puns = Pun.puns_by_day(date)
+      render json: puns
+    else
+      puns = Pun.all
+      render json: puns
+    end
   end
 
   def create
@@ -17,7 +21,6 @@ require 'date'
     pun.gif_id = gif.id
     user = User.find_by(first_name: params[:user][:first_name])
     pun.user_id = user.id
-    # like = Like.new
     # pun.user = current_account
 
     pun.save
@@ -38,18 +41,6 @@ require 'date'
     pun = Pun.find(params[:id])
     pun.destroy
     render json: pun
-  end
-
-  def show_all
-    # puns = Pun.todays_puns
-    # date = Date.parse(params[:date])
-    # puns = Pun.puns_by_day(date)
-    # render json: puns
-
-    # something kind of like this...
-    # with the request, send along date you are looking for
-    # date = Date.parse(params[:day])
-    # puns = Pun.puns_by_day(date)
   end
 
   private

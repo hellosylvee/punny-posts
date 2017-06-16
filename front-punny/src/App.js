@@ -15,19 +15,20 @@ import './styles/App.css';
 
 class App extends Component {
   handleLogin(params){
+    // debugger
+    console.log('params', params) //{username:'syl', password:'lee'}
     let URL = 'http://localhost:3000/api/v1/auth'
-    axios.post(URL, params)
+    axios.post(URL, {
+      username: this.state.username,
+      password: this.state.password
+    })
     .then(res => {
+      console.log('app', res.data)
       const token = res.data.token
       localStorage.setItem('jwtToken', token)
       setAuthorizationToken(token)
-      console.log('success!')
       // this.history.push('/home')
-      // window.location = res.data.redirect;
     })
-
-    // .then(res => console.log('what do i get here?', res))
-    // console.log('coming back to the app.js', params)
   }
 
   render() {

@@ -3,7 +3,7 @@ class PunSerializer < ActiveModel::Serializer
   belongs_to :gif
   belongs_to :user
 
-  def likes
-    object.likes.count
-  end
+  # def likes
+  #   object.likes.count
+  # end
 end

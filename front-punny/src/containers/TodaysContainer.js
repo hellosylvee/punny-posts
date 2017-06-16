@@ -14,8 +14,7 @@ class TodayContainer extends Component {
     this.state = {
       gif: {},
       puns: [],
-      date: date,
-      likes: 0
+      date: date
     }
   }
 
@@ -27,10 +26,8 @@ class TodayContainer extends Component {
     let punListURL = 'http://localhost:3000/api/v1/puns'
     axios.get(punListURL + `?date=${this.state.date}`)
     .then( res => this.setState({
-      puns: res.data,  //array of objects
-      likes: 10
+      puns: res.data  //array of objects
     }))
-    // .then(res => console.log('compondidmount: ', res.data)) //array of obj, containing gif obj, user obj, and id
   }
 
   handleAddTodaysPun(punInput){
@@ -38,7 +35,7 @@ class TodayContainer extends Component {
     axios.post(PUN_URL, {
       gif: { url: this.state.gif.images.fixed_height.url },
       pun: { pun: punInput },
-      user: { first_name: 'Mario'}
+      user: { first_name: 'Meagan'}
     })
       .then( res => {
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
@@ -54,7 +51,6 @@ class TodayContainer extends Component {
       puns: res.data,
       date: date
     }))
-    console.log('today button success!')
   }
 
   getPrevDate(){
@@ -87,8 +83,28 @@ class TodayContainer extends Component {
     }))
   }
 
+  handleAddLike(props){
+    let LIKE_URL = `http://localhost:3000/api/v1/likes`
+    axios.post(LIKE_URL, {
+      pun: { id: props.id },
+      user: { id: props.user.id }
+    })
+    .then( res => {
+      const updatedLikes = this.state.puns.map(p => {
+        if(p.id === res.data.pun.id){
+          p.likes = res.data.pun.likes
+        return p
+        } else {
+          return p
+        }
+      })
+      this.setState({ puns: updatedLikes })
+    })
+  }
+
+
   render(){
-    console.log('container: ', this.state)
+    // console.log('todays CONTAINER: ', this.state)
     return(
       <Grid>
         <Grid.Row centered columns={2}>
@@ -103,8 +119,8 @@ class TodayContainer extends Component {
           <TodaysPage
             gif={this.state.gif}
             puns={this.state.puns}
-            likes={this.state.likes} //just a #
             onSubmit={this.handleAddTodaysPun.bind(this)}
+            addLike={this.handleAddLike.bind(this)}
           />
         </Grid.Row>
       </Grid>
@@ -123,6 +139,3 @@ export default TodayContainer
 // if(mm < 10) { mm = '0' + mm }
 //
 // return mm+'/'+dd+'/'+yyyy;
-
-// var UTC = new Date().toJSON().slice(0,10).replace(/-/g,'/');
-// return UTC

@@ -7,16 +7,18 @@ import TodaysPun from './TodaysPun'
 import { Grid, Item, Segment } from 'semantic-ui-react'
 
 const TodaysPage = (props) => {
-  console.log('todays page: ', props.puns)
-
+  console.log('todays PAGE: ', props)
+  // debugger
   const revOrder = props.puns.slice(0).reverse()
   let TodaysPunComponent = revOrder.map( p => (
     <TodaysPun
       key={p.id}
       id={p.id}
-      created={p.created_at}
       pun={p.pun}
-      user={p.user} />
+      user={p.user}
+      created={p.created_at}
+      likes={p.likes}
+      addLike={props.addLike} />
   ))
 
   return(

@@ -2,7 +2,7 @@ import React from 'react'
 import { Header, Button } from 'semantic-ui-react'
 
 const TodaysDate = (props) => {
-  console.log('todays DATE: ', props)
+  // console.log('todays DATE: ', props)
   return(
     <div className='date'>
       <Header as='h1'>Punny Post of the Day</Header>
