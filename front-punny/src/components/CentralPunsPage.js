@@ -6,7 +6,7 @@ import PunsList from './pun/PunsList'
 import PunBlock from './pun/PunBlock'
 
 const CentralPunsPage = (props) => {
-  console.log('central puns page: ', props)
+  // console.log('central puns page: ', props)
   return(
     <div>
       {<PunForm onSubmit={props.onSubmit}/>}

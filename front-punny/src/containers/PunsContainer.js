@@ -46,17 +46,17 @@ class PunContainer extends Component {
     axios.patch(PUN_URL, {
       pun: { pun: punUpdate }
     })
-      .then( res => {
-        const updatedPuns = this.state.puns.map(p => {
-          if(p.id === res.data.id){
-            return res.data
-          } else {
-            return p
-          }
-        })
-        this.setState({ puns: updatedPuns })
-        this.props.history.push('/puns')
+    .then( res => {
+      const updatedPuns = this.state.puns.map(p => {
+        if(p.id === res.data.id){
+          return res.data
+        } else {
+          return p
+        }
       })
+      this.setState({ puns: updatedPuns })
+      this.props.history.push('/puns')
+    })
     console.log('back to container: ', punUpdate)
   }
 
@@ -72,17 +72,34 @@ class PunContainer extends Component {
   }
 
   handleAddLike(props){
-    console.log('WHAT THE FCUK IS THIS?', props)
     let LIKE_URL = `http://localhost:3000/api/v1/likes`
     axios.post(LIKE_URL, {
       pun: { id: props.id },
       user: { id: props.user.id }
     })
-      this.props.history.push('/puns');
+    .then( res => {
+      // console.log('what is the response?', res.data)
+      // console.log('all puns before like: ', this.state.puns)
+      const updatedLikes = this.state.puns.map(p => {
+        if(p.id === res.data.pun.id){
+          // console.log('pun likes before heart: ', p.likes)
+          p.likes = res.data.pun.likes
+          // console.log('pun likes after heart: ', p.likes)
+        return p
+        } else {
+          return p
+        }
+      })
+      this.setState({ puns: updatedLikes })
+      // console.log('all puns after likes: ', this.state.puns)
+      // console.log('update SUCCESS!!!!!!')
+      // this.props.history.push('/puns')
+    })
   }
 
   render(){
     console.log('container: ', this.state)
+    // debugger
     return(
       <div>
         <SearchGifForm
