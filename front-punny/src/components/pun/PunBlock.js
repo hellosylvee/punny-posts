@@ -5,7 +5,7 @@ import { Card, Icon, Image, Modal, Header } from 'semantic-ui-react'
 
 
 const PunBlock = (props) => {
-  // console.log('punBlock rendering', props);
+  console.log('punBlock rendering', props);
   return(
 <div>
   <Card>
@@ -16,7 +16,7 @@ const PunBlock = (props) => {
       <Card.Meta>{props.updated}</Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a onClick={() => props.addLike(props)}><Icon name='like' />{props.likes}</a>
+      <a onClick={() => props.addLike(props)}><Icon name='like' />{props.likes.length}</a>
       <a onClick={() => props.onDelete(props.id)}>Delete<Icon name='delete'/></a>
       <Modal trigger={<a>Edit Pun</a>}>
         <Modal.Header>Edit Your Pun</Modal.Header>

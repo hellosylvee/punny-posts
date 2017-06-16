@@ -4,7 +4,7 @@ require 'date'
    before_action
 
   def index
-    if params[:date]
+    if params[:date].present?
       puns = Pun.todays_puns
       date = Date.parse(params[:date])
       puns = Pun.puns_by_day(date)

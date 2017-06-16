@@ -16,7 +16,7 @@ class PunContainer extends Component {
     }
   }
 
-  componentWillMount(){
+  componentDidMount(){
     let PUN_URL = 'http://localhost:3000/api/v1/puns'
     axios.get(PUN_URL)
       .then( res => this.setState({ puns: res.data }))
@@ -33,7 +33,7 @@ class PunContainer extends Component {
     axios.post(PUN_URL, {
       gif: { url: this.state.random_gif.image_url },
       pun: { pun: punInput },
-      user: { first_name: 'Meagan'}
+      user: { first_name: 'Teresa'}
     })
       .then( res => { console.log('container: ', res.data )
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
