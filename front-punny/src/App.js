@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom'
 
 import PunsContainer from './containers/PunsContainer'
 import TodaysContainer from './containers/TodaysContainer'
@@ -16,18 +16,19 @@ import './styles/App.css';
 class App extends Component {
   handleLogin(params){
     // debugger
-    console.log('params', params) //{username:'syl', password:'lee'}
+    console.log('params', params)
     let URL = 'http://localhost:3000/api/v1/auth'
     axios.post(URL, {
-      username: this.state.username,
-      password: this.state.password
+      username: params.username,
+      password: params.password
     })
-    .then(res => {
-      console.log('app', res.data)
+    .then(res => {  //console.log('app', res.data)
       const token = res.data.token
-      localStorage.setItem('jwtToken', token)
+      // console.log('store in localStorage: ', token)
+      localStorage.setItem('jwt', token)
       setAuthorizationToken(token)
-      // this.history.push('/home')
+      // debugger
+      this.props.history.push('/home')
     })
   }
 
@@ -36,23 +37,16 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route
-            exact path='/'
-            render={() => <h1>Welcome to Puns Home Page</h1>}/>
-          <Route path='/puns' component={PunsContainer} />
+          <Route path='/home' component={PunsContainer} />
           <Route path='/today' component={TodaysContainer} />
-          <Route
-            path='/new'
-            render={() => <h1>This is where you will upload your giphy or image!</h1>} />
-          <Route
-            path='/profile' component={ProfileContainer} />
+          <Route path='/profile' component={ProfileContainer} />
           <Route
             path='/login'
-            render={() => <LoginForm handleLogin={this.handleLogin}/>} />
+            render={() => <LoginForm handleLogin={this.handleLogin.bind(this)}/>} />
         </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

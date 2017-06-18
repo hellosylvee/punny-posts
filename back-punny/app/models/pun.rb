@@ -3,10 +3,6 @@ class Pun < ApplicationRecord
   belongs_to :user, optional: true
   belongs_to :gif, optional: true
 
-  # def self.return_puns_conditional
-  #
-  # end
-
   def self.todays_puns
     Pun.where("created_at >= ?", Time.zone.now.beginning_of_day)
   end

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Input, Button, Icon } from 'semantic-ui-react'
+import { Form, TextArea, Button, Icon } from 'semantic-ui-react'
 
 class PunEditForm extends Component {
   constructor(props){
@@ -31,18 +31,13 @@ class PunEditForm extends Component {
     console.log('puneditform', this.state)
     return(
       <div>
-        {/* <Button
-          onClick={() => this.handleDeletePun()}
-          default>
-          Delete
-        </Button> */}
         <Form onSubmit={this.handleUpdatePun.bind(this)}>
-          <Input
+          <TextArea
             value={this.state.input}
             onChange={this.handleInputChange.bind(this)}
           />
           <Button primary>
-            Save <Icon name='right chevron' />
+            Save Pun <Icon name='right chevron' />
           </Button>
         </Form>
     </div>

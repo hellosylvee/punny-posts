@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
+
 import TodaysDate from '../components/today/TodaysDate'
 import TodaysPage from '../components/today/TodaysPage'
 
@@ -19,15 +21,19 @@ class TodayContainer extends Component {
   }
 
   componentDidMount(){
-    let URL = 'http://api.giphy.com/v1/gifs/trending?&api_key=dc6zaTOxFJmzC&limit=1'
-    axios.get(URL)
+    if(!localStorage.jwt){
+      return this.props.history.push('/login')
+    } else {
+      let URL = 'http://api.giphy.com/v1/gifs/trending?&api_key=dc6zaTOxFJmzC&limit=1'
+      axios.get(URL)
       .then( res => this.setState({ gif: res.data.data[0] })) //1 obj
 
-    let punListURL = 'http://localhost:3000/api/v1/puns'
-    axios.get(punListURL + `?date=${this.state.date}`)
-    .then( res => this.setState({
-      puns: res.data  //array of objects
-    }))
+      let punListURL = 'http://localhost:3000/api/v1/puns'
+      axios.get(punListURL + `?date=${this.state.date}`)
+      .then( res => this.setState({
+        puns: res.data  //array of objects
+      }))
+    }
   }
 
   handleAddTodaysPun(punInput){
@@ -102,9 +108,8 @@ class TodayContainer extends Component {
     })
   }
 
-
   render(){
-    // console.log('todays CONTAINER: ', this.state)
+    console.log('todays CONTAINER: ', this.state)
     return(
       <Grid>
         <Grid.Row centered columns={2}>
@@ -128,14 +133,4 @@ class TodayContainer extends Component {
   }
 }
 
-export default TodayContainer
-
-// let today = new Date();
-// let dd = today.getDate();
-// let mm = today.getMonth()+1;
-// let yyyy = today.getFullYear();
-//
-// if(dd < 10) { dd = '0' + dd }
-// if(mm < 10) { mm = '0' + mm }
-//
-// return mm+'/'+dd+'/'+yyyy;
+export default withRouter(TodayContainer)

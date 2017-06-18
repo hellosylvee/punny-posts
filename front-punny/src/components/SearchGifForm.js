@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Form, Button, Grid } from 'semantic-ui-react'
 
 class SearchGifForm extends Component {
   constructor(){
@@ -20,10 +21,14 @@ class SearchGifForm extends Component {
 
   render(){
     return(
-      <form className='search' onSubmit={this.handleSearchGif.bind(this)}>
-        <input type="text" placeholder="Search for a gif" onChange={this.handleChange.bind(this)}/>
-        <button>Search</button>
-      </form>
+      <Grid.Column>
+        <Form className='search' onSubmit={this.handleSearchGif.bind(this)}>
+          <Form.Field type="text" onChange={this.handleChange.bind(this)}>
+            <input placeholder='Search for a gif'/>
+          </Form.Field>
+          <Button color='teal' type='submit'>Search Gif</Button>
+        </Form>
+      </Grid.Column>
     )
   }
 }

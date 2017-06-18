@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import UserPunStats from '../components/profile/UserPunStats'
+import axios from 'axios'
 
 class ProfileContainer extends Component {
   constructor(){
@@ -11,13 +11,18 @@ class ProfileContainer extends Component {
     }
   }
 
+  componentDidMount(){
+    if(!localStorage.jwt){
+      return this.props.history.push('/login')
+    } else {
+      console.log('send a GET request!')
+    }
+  }
+
   render(){
     return(
       <div>
-        <ul>
-          <li><Link to='/profile/puns' component={UserPunStats}>Best Puns</Link></li>
-          <li><Link to='/settings'>Settings</Link></li>
-        </ul>
+        <UserPunStats />
       </div>
     )
   }

@@ -5,6 +5,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'semantic-ui-css/semantic.min.css'
 import './styles/index.css';
+import setAuthorizationToken from './components/auth/setAuthorizationToken'
+
+setAuthorizationToken(localStorage.jwtToken);
 
 ReactDOM.render((
   <Router>

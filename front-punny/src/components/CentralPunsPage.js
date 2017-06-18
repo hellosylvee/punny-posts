@@ -1,14 +1,16 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+
 import PunForm from './pun/PunForm'
 import PunsList from './pun/PunsList'
-
 import PunBlock from './pun/PunBlock'
+
+import { Grid } from 'semantic-ui-react'
 
 const CentralPunsPage = (props) => {
   // console.log('central puns page: ', props)
   return(
-    <div>
+    <Grid.Column>
       {<PunForm onSubmit={props.onSubmit}/>}
       {<PunsList
         puns={props.puns}
@@ -24,7 +26,7 @@ const CentralPunsPage = (props) => {
             return <PunBlock pun={pun} onDelete={props.onDelete}/> } }
         />
       </Switch>
-    </div>
+    </Grid.Column>
   )
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Grid, Form, Button } from 'semantic-ui-react'
 
 class PunForm extends Component {
   constructor(){
@@ -20,14 +21,15 @@ class PunForm extends Component {
 
   render(){
     return(
-      <form className='form' onSubmit={this.handleAddPun.bind(this)}>
-        <div>Enter a pun</div>
-        <textarea
-          placeholder="Enter your pun here"
-          onChange={this.handleInputChange.bind(this)}>
-        </textarea>
-        <button>Submit Pun</button>
-      </form>
+      <Grid.Column>
+        <Form className='form' onSubmit={this.handleAddPun.bind(this)}>
+          <Form.Field>
+            <label>Enter a pun</label>
+            <input placeholder="Enter your pun here" onChange={this.handleInputChange.bind(this)}/>
+          </Form.Field>
+          <Button color='teal'>Submit Pun</Button>
+        </Form>
+      </Grid.Column>
     )
   }
 }

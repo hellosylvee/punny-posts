@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, withRouter } from 'react-router-dom'
 
 import CentralPunsPage from '../components/CentralPunsPage'
 import SearchGifForm from '../components/SearchGifForm'
 import SearchGifDisplay from '../components/SearchGifDisplay'
+
+import { Grid } from 'semantic-ui-react'
 
 import axios from 'axios'
 
@@ -17,9 +20,13 @@ class PunContainer extends Component {
   }
 
   componentDidMount(){
-    let PUN_URL = 'http://localhost:3000/api/v1/puns'
-    axios.get(PUN_URL)
+    if(!localStorage.jwt){
+      return this.props.history.push('/login')
+    } else {
+      let PUN_URL = 'http://localhost:3000/api/v1/puns'
+      axios.get(PUN_URL)
       .then( res => this.setState({ puns: res.data }))
+    }
   }
 
   handleSearchGif(query){
@@ -55,7 +62,7 @@ class PunContainer extends Component {
         }
       })
       this.setState({ puns: updatedPuns })
-      this.props.history.push('/puns')
+      this.props.history.push('/home')
     })
     console.log('back to container: ', punUpdate)
   }
@@ -67,7 +74,7 @@ class PunContainer extends Component {
       const updatedPuns = this.state.puns.filter(pun => pun.id !== id)
       this.setState({ puns: updatedPuns})
       alert("Pun has been deleted!")
-      this.props.history.push('/puns')
+      this.props.history.push('/home')
     })
   }
 
@@ -101,22 +108,27 @@ class PunContainer extends Component {
     console.log('container: ', this.state)
     // debugger
     return(
-      <div>
-        <SearchGifForm
-          query={this.state.query}
-          onSubmit={this.handleSearchGif.bind(this)}/>
-        <SearchGifDisplay random_gif={this.state.random_gif}/>
-        <CentralPunsPage
-          onSubmit={this.handleAddPun.bind(this)}
-          onUpdate={this.handleUpdatePun.bind(this)}
-          onDelete={this.handleDeletePun.bind(this)}
-          addLike={this.handleAddLike.bind(this)}
-          puns={this.state.puns}
-        />
-      </div>
+      <Grid>
+        <Grid.Row centered columns={3}>
+          <SearchGifForm
+            query={this.state.query}
+            onSubmit={this.handleSearchGif.bind(this)}/>
+        </Grid.Row>
+        <Grid.Row centered columns={2}>
+          <SearchGifDisplay random_gif={this.state.random_gif}/>
+        </Grid.Row>
+        <Grid.Row>
+          <CentralPunsPage
+            onSubmit={this.handleAddPun.bind(this)}
+            onUpdate={this.handleUpdatePun.bind(this)}
+            onDelete={this.handleDeletePun.bind(this)}
+            addLike={this.handleAddLike.bind(this)}
+            puns={this.state.puns}/>
+        </Grid.Row>
+      </Grid>
     )
   }
 }
 
 
-export default PunContainer
+export default withRouter(PunContainer)

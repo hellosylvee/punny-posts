@@ -1,10 +1,10 @@
 import React from 'react'
 import PunBlock from './PunBlock'
 
-const PunsList = (props) => {
-  const revOrder = props.puns.slice(0).reverse()
+import { Grid } from 'semantic-ui-react'
 
-  // let allGP = revOrder.map( gp => <Link to={`/puns/${gp.id}`}><PunBlock key={gp.id} id={gp.id} pun={gp.pun} url={gp.gif.url}/></Link> )
+const PunsList = (props) => {
+  const revOrder = props.puns.slice(90).reverse()
   // console.log('punslist', props)
   let allGP = revOrder.map( gp => (
     <PunBlock
@@ -21,10 +21,10 @@ const PunsList = (props) => {
     />
   ))
   return(
-    <div>
+    <Grid.Column>
       <h2>All the Glorious Puns</h2>
       {allGP}
-    </div>
+    </Grid.Column>
   )
 }
 

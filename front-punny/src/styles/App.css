@@ -1,26 +1,3 @@
-.navbar {
-  border: solid purple 2px;
-  background-color: #999;
-  margin-bottom: 20px;
-}
-
-.navbar li {
-  display: inline;
-  padding-right: 20px;
-}
-
-.signin {
-  border: solid green 2px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.search {
-  border: solid green 2px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
 .pls {
   padding-left: 16px;
 }
@@ -29,6 +6,16 @@
   padding-right: 16px;
 }
 
+.float-right {
+  float: right;
+}
+
 .ui.segment.body-content {
   padding: 36px;
+}
+
+.ui.card {
+  position: relative;
+  float: left;
+  max-height: 450px;
 }
