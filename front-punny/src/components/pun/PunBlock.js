@@ -7,10 +7,11 @@ const PunBlock = (props) => {
   // console.log('punBlock rendering', props);
   return(
 <div>
-  <Card>
-    <Image src={props.url} />
+  <Card className='animated fadeInDown'>
+    <Image src={props.gif.img_url} />
     <Card.Content>
       <Card.Header>{props.pun}</Card.Header>
+      {/* <Card.Description>should be query here</Card.Description> */}
       <Card.Description>By you</Card.Description>
       <Card.Meta>{props.updated}</Card.Meta>
     </Card.Content>
@@ -38,12 +39,12 @@ const PunBlock = (props) => {
               />
           </Modal.Description>
         </Modal.Content>
-        <Modal.Actions>
+        {/* <Modal.Actions>
           <Button default onClick={() => props.onDelete(props.id)}>Delete</Button>
           <Button primary onClick={() => props.onUpdate(props.id)}>
             Save <Icon name='right chevron' />
           </Button>
-        </Modal.Actions>
+        </Modal.Actions> */}
       </Modal>
     </Card.Content>
   </Card>

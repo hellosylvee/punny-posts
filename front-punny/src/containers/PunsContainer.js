@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 import CentralPunsPage from '../components/CentralPunsPage'
 import SearchGifForm from '../components/SearchGifForm'
 import SearchGifDisplay from '../components/SearchGifDisplay'
 
-import { Grid } from 'semantic-ui-react'
+import { Grid, Header } from 'semantic-ui-react'
 
 import axios from 'axios'
 
@@ -30,17 +30,19 @@ class PunContainer extends Component {
   }
 
   handleSearchGif(query){
-    let URL = `http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`
-    axios.get(URL)
+    axios.get(`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`)
       .then( res => this.setState({ random_gif: res.data.data }))
   }
 
   handleAddPun(punInput){
-    let PUN_URL = 'http://localhost:3000/api/v1/puns'
-    axios.post(PUN_URL, {
-      gif: { url: this.state.random_gif.image_url },
-      pun: { pun: punInput },
-      user: { first_name: 'Teresa'}
+    axios.post('http://localhost:3000/api/v1/puns', {
+      gif: {
+        url: this.state.random_gif.image_url,
+        img_url: this.state.random_gif.fixed_height_downsampled_url
+      },
+      pun: {
+        pun: punInput },
+      user: { first_name: 'sylvee'}
     })
       .then( res => { console.log('container: ', res.data )
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
@@ -49,8 +51,7 @@ class PunContainer extends Component {
   }
 
   handleUpdatePun(punUpdate, id){
-    let PUN_URL = `http://localhost:3000/api/v1/puns/${id}` //${id}
-    axios.patch(PUN_URL, {
+    axios.patch(`http://localhost:3000/api/v1/puns/${id}`, {
       pun: { pun: punUpdate }
     })
     .then( res => {
@@ -62,25 +63,23 @@ class PunContainer extends Component {
         }
       })
       this.setState({ puns: updatedPuns })
-      this.props.history.push('/home')
+      // this.props.history.push('/home')
     })
     console.log('back to container: ', punUpdate)
   }
 
   handleDeletePun(id){
-    let PUN_URL = `http://localhost:3000/api/v1/puns/${id}`
-    axios.delete(PUN_URL)
+    axios.delete(`http://localhost:3000/api/v1/puns/${id}`)
     .then( res => {
       const updatedPuns = this.state.puns.filter(pun => pun.id !== id)
       this.setState({ puns: updatedPuns})
       alert("Pun has been deleted!")
-      this.props.history.push('/home')
+      this.props.history.push('/puns')
     })
   }
 
   handleAddLike(props){
-    let LIKE_URL = `http://localhost:3000/api/v1/likes`
-    axios.post(LIKE_URL, {
+    axios.post(`http://localhost:3000/api/v1/likes`, {
       pun: { id: props.id },
       user: { id: props.user.id }
     })
@@ -98,18 +97,16 @@ class PunContainer extends Component {
         }
       })
       this.setState({ puns: updatedLikes })
-      // console.log('all puns after likes: ', this.state.puns)
-      // console.log('update SUCCESS!!!!!!')
-      // this.props.history.push('/puns')
+      this.props.history.push('/puns')
     })
   }
 
   render(){
     console.log('container: ', this.state)
-    // debugger
     return(
       <Grid>
-        <Grid.Row centered columns={3}>
+        <Grid.Row centered columns={2}>
+          <Header as='h1' className='animated fadeIn page-header'>Punny Post</Header>
           <SearchGifForm
             query={this.state.query}
             onSubmit={this.handleSearchGif.bind(this)}/>

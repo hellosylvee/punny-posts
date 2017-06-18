@@ -16,7 +16,7 @@ require 'date'
   end
 
   def create
-    gif = Gif.create(url: params[:gif][:url])
+    gif = Gif.create(url: params[:gif][:url], img_url: params[:gif][:img_url])
     pun = Pun.new(pun_params)
     pun.gif_id = gif.id
     user = User.find_by(first_name: params[:user][:first_name])

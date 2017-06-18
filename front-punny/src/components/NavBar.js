@@ -1,18 +1,56 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-const NavBar = () => {
-  return(
-    <div className='navbar'>
-      <ul>
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/today">Today's Pun</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-        <li><Link to="/login">Log In</Link></li>
-        <li><Link to="/logout">Log Out</Link></li>
-      </ul>
-    </div>
-  )
-}
+import { Menu } from 'semantic-ui-react'
 
-export default NavBar
+export default class NavBar extends Component {
+  state = {}
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <Menu
+        color='teal'
+        inverted widths={5}
+        className='animated fadeInDown'>
+        <Menu.Item as={Link} to='/home'
+          name='home'
+          active={activeItem === 'home'}
+          onClick={this.handleItemClick}
+        > Home
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/puns'
+          name='puns'
+          active={activeItem === 'pun'}
+          onClick={this.handleItemClick}
+        > Puns
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/today'
+          name='today'
+          active={activeItem === 'today'}
+          onClick={this.handleItemClick}
+        > Today
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/profile'
+          name='profile'
+          active={activeItem === 'profile'}
+          onClick={this.handleItemClick}
+        > Profile
+        </Menu.Item>
+
+        <Menu.Item as={Link} to='/login'
+          name='login'
+          active={activeItem === 'login'}
+          onClick={this.handleItemClick}
+        > Log In
+        </Menu.Item>
+      </Menu>
+    )
+  }
+}

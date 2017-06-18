@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, withRouter } from 'react-router-dom'
+import { Switch, Route, withRouter } from 'react-router-dom'
 
 import PunsContainer from './containers/PunsContainer'
 import TodaysContainer from './containers/TodaysContainer'
 import ProfileContainer from './containers/ProfileContainer'
 
 import NavBar from './components/NavBar'
+// import PageHeaders from './components/PageHeaders'
 import LoginForm from './components/LoginForm'
 
 import setAuthorizationToken from './components/auth/setAuthorizationToken'
@@ -28,7 +29,7 @@ class App extends Component {
       localStorage.setItem('jwt', token)
       setAuthorizationToken(token)
       // debugger
-      this.props.history.push('/home')
+      this.props.history.push('/puns')
     })
   }
 
@@ -37,7 +38,8 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          <Route path='/home' component={PunsContainer} />
+          {/* <Route path='/home' component={PunsContainer} /> */}
+          <Route path='/puns' component={PunsContainer} />
           <Route path='/today' component={TodaysContainer} />
           <Route path='/profile' component={ProfileContainer} />
           <Route

@@ -15,7 +15,8 @@ class ProfileContainer extends Component {
     if(!localStorage.jwt){
       return this.props.history.push('/login')
     } else {
-      console.log('send a GET request!')
+      axios.get('http://localhost:3000/api/v1/users')
+      .then( res => console.log('what is this', res.data))
     }
   }
 

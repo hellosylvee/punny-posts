@@ -18,7 +18,7 @@ class LoginForm extends Component {
 
   handleSubmit(e){
     e.preventDefault()
-    console.log('hey! you are sending this to app.js')
+    // console.log('hey! you are sending this to app.js')
     this.props.handleLogin(this.state)
   }
 
@@ -26,9 +26,9 @@ class LoginForm extends Component {
     console.log('sign in', this.state)
     return(
       <Grid>
-        <Grid.Row centered columns={3}>
+        <Grid.Row centered columns={2}>
           <Grid.Column>
-            <Segment>
+            <Segment className='animated fadeInDown body-content'>
               <Form onSubmit={this.handleSubmit.bind(this)}><br/>
                 <Form.Field>
                   <Header as='h3'>Username</Header>

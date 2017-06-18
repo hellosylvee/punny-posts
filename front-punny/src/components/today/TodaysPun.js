@@ -17,7 +17,7 @@ class TodaysPun extends Component {
     console.log('This is one pun item!!!!!!!: ', this.state)
     let pun = this.state
     return(
-      <Item>
+      <Item className='animated fadeInDown'>
         <Item.Image size='mini' shape='circular' src='http://placekitten.com/g/50/50'/>
 
         <Item.Content>

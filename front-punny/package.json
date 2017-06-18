@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^3.5.2",
     "axios": "^0.16.2",
     "react": "^15.5.4",
     "react-day-picker": "^5.5.3",

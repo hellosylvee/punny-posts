@@ -4,9 +4,10 @@ import { Header, Button } from 'semantic-ui-react'
 const TodaysDate = (props) => {
   // console.log('todays DATE: ', props)
   return(
-    <div className='date'>
-      <Header as='h1'>Punny Post of the Day</Header>
-      <Header as='h1'>{props.date}</Header>
+    <div>
+      <Header as='h1' className='animated bounceIn'>Punny Post of the Day</Header>
+      <Header as='h1' className='animated bounceIn'>{props.date}</Header>
+      <div className='animated fadeIn'>
         <Button
           size='large'
           content='prev'
@@ -24,6 +25,7 @@ const TodaysDate = (props) => {
           icon='right arrow'
           labelPosition='right'
           onClick={()=>props.onNextDay()} />
+        </div>
     </div>
   )
 }

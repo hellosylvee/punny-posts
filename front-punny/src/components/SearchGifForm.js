@@ -22,7 +22,7 @@ class SearchGifForm extends Component {
   render(){
     return(
       <Grid.Column>
-        <Form className='search' onSubmit={this.handleSearchGif.bind(this)}>
+        <Form className='animated fadeInDown search' onSubmit={this.handleSearchGif.bind(this)}>
           <Form.Field type="text" onChange={this.handleChange.bind(this)}>
             <input placeholder='Search for a gif'/>
           </Form.Field>

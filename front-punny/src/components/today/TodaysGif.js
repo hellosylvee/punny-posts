@@ -7,7 +7,7 @@ const TodaysGif = (props) => {
   var gif = props.gif.images ? props.gif.images.fixed_height.url : null
 
   return(
-    <div className='gif'>
+    <div className='gif mtm'>
       <Image src={gif} alt={props.gif.type} shape='rounded' bordered fluid />
     </div>
   )

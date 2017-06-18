@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon, Image, Statistic } from 'semantic-ui-react'
 
 const UserPunStats = () => (
-  <Statistic.Group widths='four'>
+  <Statistic.Group widths='four' className='animated fadeInDown'>
     <Statistic>
       <Statistic.Value>
         <Image src='http://placekitten.com/g/50/50' className='circular inline' />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { Form, TextArea, Button, Icon } from 'semantic-ui-react'
 
 class PunEditForm extends Component {
@@ -16,15 +17,14 @@ class PunEditForm extends Component {
 
   handleUpdatePun(e){
     e.preventDefault()
-    // debugger
     this.props.onUpdate(this.state.input, this.props.id)
     this.setState({ input: '' })
+    this.props.history.push('/puns')
   }
 
   handleDeletePun(){
     console.log('clicked!: ', this.props)
     this.props.onDelete(this.props.id)
-
   }
 
   render(){
@@ -36,13 +36,14 @@ class PunEditForm extends Component {
             value={this.state.input}
             onChange={this.handleInputChange.bind(this)}
           />
-          <Button primary>
-            Save Pun <Icon name='right chevron' />
-          </Button>
+          <div className='mtm'>
+            {/* <Button default> Delete Pun </Button> */}
+            <Button primary>  Save Pun <Icon name='right chevron' /></Button>
+          </div>
         </Form>
     </div>
     )
   }
 }
 
-export default PunEditForm
+export default withRouter(PunEditForm)

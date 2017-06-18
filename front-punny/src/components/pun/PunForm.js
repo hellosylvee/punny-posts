@@ -22,7 +22,7 @@ class PunForm extends Component {
   render(){
     return(
       <Grid.Column>
-        <Form className='form' onSubmit={this.handleAddPun.bind(this)}>
+        <Form className='animated fadeInDown pun-form' onSubmit={this.handleAddPun.bind(this)}>
           <Form.Field>
             <label>Enter a pun</label>
             <input placeholder="Enter your pun here" onChange={this.handleInputChange.bind(this)}/>

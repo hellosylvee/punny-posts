@@ -6,7 +6,7 @@ const SearchGifDisplay = (props) => {
   console.log('searchgifdisplay', props)
   return(
     <Grid.Column>
-      <Image src={gif.image_url} size='large' shape='rounded' alt={gif.type}/>
+      <Image src={gif.image_url} size='large' shape='rounded' className='animated fadeInDown' alt={gif.type}/>
       {/* {props.random_gif.image_url ? <button}>select</button> : null} */}
     </Grid.Column>
   )

@@ -24,8 +24,7 @@ class TodayContainer extends Component {
     if(!localStorage.jwt){
       return this.props.history.push('/login')
     } else {
-      let URL = 'http://api.giphy.com/v1/gifs/trending?&api_key=dc6zaTOxFJmzC&limit=1'
-      axios.get(URL)
+      axios.get('http://api.giphy.com/v1/gifs/trending?&api_key=dc6zaTOxFJmzC&limit=1')
       .then( res => this.setState({ gif: res.data.data[0] })) //1 obj
 
       let punListURL = 'http://localhost:3000/api/v1/puns'
@@ -37,8 +36,7 @@ class TodayContainer extends Component {
   }
 
   handleAddTodaysPun(punInput){
-    let PUN_URL = 'http://localhost:3000/api/v1/puns'
-    axios.post(PUN_URL, {
+    axios.post('http://localhost:3000/api/v1/puns', {
       gif: { url: this.state.gif.images.fixed_height.url },
       pun: { pun: punInput },
       user: { first_name: 'Meagan'}
@@ -51,8 +49,7 @@ class TodayContainer extends Component {
   getTodaysDate(){
     var date = new Date().toJSON().slice(0,10).replace(/-/g,'/')
 
-    let PUN_URL = 'http://localhost:3000/api/v1/puns/'
-    axios.get(PUN_URL + `?date=${date}`)
+    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${date}`)
     .then( res => this.setState({
       puns: res.data,
       date: date
@@ -65,8 +62,7 @@ class TodayContainer extends Component {
     var [yyyy, mm, dd] = curr
     let prevDay = yyyy + '/' + mm + '/' + (dd - 1)
 
-    let PUN_URL = 'http://localhost:3000/api/v1/puns/'
-    axios.get(PUN_URL + `?date=${prevDay}`)
+    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${prevDay}`)
     .then( res => this.setState({
       puns: res.data,
       date: prevDay
@@ -81,8 +77,7 @@ class TodayContainer extends Component {
     var nn = nd.toString()
     let nextDay = yyyy + '/' + mm + '/' + nn
 
-    let PUN_URL = 'http://localhost:3000/api/v1/puns/'
-    axios.get(PUN_URL + `?date=${nextDay}`)
+    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${nextDay}`)
     .then( res => this.setState({
       puns: res.data,
       date: nextDay
@@ -90,8 +85,7 @@ class TodayContainer extends Component {
   }
 
   handleAddLike(props){
-    let LIKE_URL = `http://localhost:3000/api/v1/likes`
-    axios.post(LIKE_URL, {
+    axios.post('http://localhost:3000/api/v1/likes', {
       pun: { id: props.id },
       user: { id: props.user.id }
     })

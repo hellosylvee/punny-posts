@@ -6,16 +6,50 @@
   padding-right: 16px;
 }
 
+.mtm {
+  margin-top: 24px;
+}
+
+.mtl {
+  margin-top: 36px;
+}
+
 .float-right {
   float: right;
 }
 
+.ui.inverted.menu {
+  margin-bottom: 48px;
+}
+
+.ui.inverted.menu .item {
+  font-size: 16px;
+}
+
+.ui.header.page-header {
+  margin-bottom: 36px;
+}
+/*Todays Container > Todays Page*/
 .ui.segment.body-content {
   padding: 36px;
 }
 
+img.ui.large.rounded.image {
+  margin:  0 auto;
+}
 .ui.card {
   position: relative;
   float: left;
-  max-height: 450px;
 }
+
+.pun-form {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*.column.centralpunspage {
+  width: 99%;
+  position: relative;
+  margin: 0 auto;
+}*/

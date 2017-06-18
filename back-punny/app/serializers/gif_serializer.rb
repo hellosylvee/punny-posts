@@ -1,3 +1,3 @@
 class GifSerializer < ActiveModel::Serializer
-  attributes :id, :url
+  attributes :id, :url, :img_url
 end
