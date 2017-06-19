@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Form, Button } from 'semantic-ui-react'
+import { Grid, Form, Header, Button } from 'semantic-ui-react'
 
 class PunForm extends Component {
   constructor(){
@@ -20,16 +20,20 @@ class PunForm extends Component {
   }
 
   render(){
+    
     return(
-      <Grid.Column>
-        <Form className='animated fadeInDown pun-form' onSubmit={this.handleAddPun.bind(this)}>
-          <Form.Field>
-            <label>Enter a pun</label>
-            <input placeholder="Enter your pun here" onChange={this.handleInputChange.bind(this)}/>
-          </Form.Field>
-          <Button color='teal'>Submit Pun</Button>
-        </Form>
-      </Grid.Column>
+      <Grid.Row centered columns={3} className='animated fadeIn'>
+        <Grid.Column>
+          <Form className='animated fadeInDown mbl' onSubmit={this.handleAddPun.bind(this)}>
+            <Form.Field>
+              <label>Enter a pun</label>
+              <input placeholder="Enter your pun here" onChange={this.handleInputChange.bind(this)}/>
+            </Form.Field>
+            <Button color='teal'>Submit Pun</Button>
+          </Form>
+        </Grid.Column>
+        <Header as='h2' className='animated fadeIn'>All Your Glorious Puns</Header>
+      </Grid.Row>
     )
   }
 }

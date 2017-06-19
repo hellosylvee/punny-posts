@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom'
 
+import HomeContainer from './containers/HomeContainer'
 import PunsContainer from './containers/PunsContainer'
 import TodaysContainer from './containers/TodaysContainer'
 import ProfileContainer from './containers/ProfileContainer'
 
 import NavBar from './components/NavBar'
-// import PageHeaders from './components/PageHeaders'
 import LoginForm from './components/LoginForm'
 
 import setAuthorizationToken from './components/auth/setAuthorizationToken'
@@ -38,7 +38,7 @@ class App extends Component {
       <div>
         <NavBar />
         <Switch>
-          {/* <Route path='/home' component={PunsContainer} /> */}
+          <Route path='/home' component={HomeContainer} />
           <Route path='/puns' component={PunsContainer} />
           <Route path='/today' component={TodaysContainer} />
           <Route path='/profile' component={ProfileContainer} />

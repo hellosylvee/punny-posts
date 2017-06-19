@@ -37,7 +37,10 @@ class TodayContainer extends Component {
 
   handleAddTodaysPun(punInput){
     axios.post('http://localhost:3000/api/v1/puns', {
-      gif: { url: this.state.gif.images.fixed_height.url },
+      gif: {
+        url: this.state.gif.images.fixed_height.url,
+        img_url: this.state.gif.images.fixed_height_downsampled.url
+       },
       pun: { pun: punInput },
       user: { first_name: 'Meagan'}
     })
@@ -114,7 +117,7 @@ class TodayContainer extends Component {
             onNextDay={this.getNextDate.bind(this)}
           />
         </Grid.Row>
-        <Grid.Row centered columns={2}>
+        <Grid.Row centered columns={2} className='animated fadeIn'>
           <TodaysPage
             gif={this.state.gif}
             puns={this.state.puns}

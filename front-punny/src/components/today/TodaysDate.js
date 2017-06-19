@@ -7,7 +7,7 @@ const TodaysDate = (props) => {
     <div>
       <Header as='h1' className='animated bounceIn'>Punny Post of the Day</Header>
       <Header as='h1' className='animated bounceIn'>{props.date}</Header>
-      <div className='animated fadeIn'>
+      <div className='animated fadeIn mtl'>
         <Button
           size='large'
           content='prev'

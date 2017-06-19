@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Segment, Form, Header, Button, Icon } from 'semantic-ui-react'
+import { Grid, Segment, Form, Header, Button, Icon, Image } from 'semantic-ui-react'
 
 class LoginForm extends Component {
   constructor(){
@@ -26,9 +26,12 @@ class LoginForm extends Component {
     console.log('sign in', this.state)
     return(
       <Grid>
-        <Grid.Row centered columns={2}>
+        <Grid.Row centered columns={2} className='animated fadeInDown'>
+          <Image src='./assets/images/beach-ball.png' size='mini' className='animated infinite bounce ball-center'/>
+          <Header as='h1' className='page-header'>Punny Posts</Header>
           <Grid.Column>
-            <Segment className='animated fadeInDown body-content'>
+            <Segment className='body-content'>
+              <Header as='h4'>Don't be a stranger! Log in to add puns.</Header>
               <Form onSubmit={this.handleSubmit.bind(this)}><br/>
                 <Form.Field>
                   <Header as='h3'>Username</Header>

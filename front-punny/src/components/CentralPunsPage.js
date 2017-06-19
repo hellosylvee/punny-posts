@@ -9,8 +9,9 @@ import { Grid } from 'semantic-ui-react'
 
 const CentralPunsPage = (props) => {
   console.log('central puns page: ', props)
+
   return(
-    <Grid.Column>
+    <Grid>
       {<PunForm onSubmit={props.onSubmit}/>}
       {<PunsList
         puns={props.puns}
@@ -26,8 +27,10 @@ const CentralPunsPage = (props) => {
             return <PunBlock pun={pun} onDelete={props.onDelete}/> } }
         />
       </Switch>
-    </Grid.Column>
+    </Grid>
   )
 }
 
 export default CentralPunsPage
+
+// let allPuns = <Header as='h2'>All the Glorious Puns</Header>

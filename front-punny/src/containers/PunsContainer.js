@@ -23,8 +23,7 @@ class PunContainer extends Component {
     if(!localStorage.jwt){
       return this.props.history.push('/login')
     } else {
-      let PUN_URL = 'http://localhost:3000/api/v1/puns'
-      axios.get(PUN_URL)
+      axios.get('http://localhost:3000/api/v1/puns')
       .then( res => this.setState({ puns: res.data }))
     }
   }
@@ -104,25 +103,21 @@ class PunContainer extends Component {
   render(){
     console.log('container: ', this.state)
     return(
-      <Grid>
-        <Grid.Row centered columns={2}>
-          <Header as='h1' className='animated fadeIn page-header'>Punny Post</Header>
+      <div>
+        <Grid>
           <SearchGifForm
             query={this.state.query}
             onSubmit={this.handleSearchGif.bind(this)}/>
-        </Grid.Row>
-        <Grid.Row centered columns={2}>
-          <SearchGifDisplay random_gif={this.state.random_gif}/>
-        </Grid.Row>
-        <Grid.Row>
-          <CentralPunsPage
-            onSubmit={this.handleAddPun.bind(this)}
-            onUpdate={this.handleUpdatePun.bind(this)}
-            onDelete={this.handleDeletePun.bind(this)}
-            addLike={this.handleAddLike.bind(this)}
-            puns={this.state.puns}/>
-        </Grid.Row>
-      </Grid>
+          <SearchGifDisplay
+            random_gif={this.state.random_gif}/>
+        </Grid>
+        <CentralPunsPage
+          onSubmit={this.handleAddPun.bind(this)}
+          onUpdate={this.handleUpdatePun.bind(this)}
+          onDelete={this.handleDeletePun.bind(this)}
+          addLike={this.handleAddLike.bind(this)}
+          puns={this.state.puns}/>
+    </div>
     )
   }
 }

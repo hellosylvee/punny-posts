@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Button, Grid } from 'semantic-ui-react'
+import { Form, Header, Button, Grid } from 'semantic-ui-react'
 
 class SearchGifForm extends Component {
   constructor(){
@@ -20,15 +20,20 @@ class SearchGifForm extends Component {
   }
 
   render(){
+
     return(
-      <Grid.Column>
-        <Form className='animated fadeInDown search' onSubmit={this.handleSearchGif.bind(this)}>
-          <Form.Field type="text" onChange={this.handleChange.bind(this)}>
-            <input placeholder='Search for a gif'/>
-          </Form.Field>
-          <Button color='teal' type='submit'>Search Gif</Button>
-        </Form>
-      </Grid.Column>
+      <Grid.Row centered columns={3} className='animated fadeIn'>
+        <Header as='h1' className='animated fadeIn page-header'>Punny Post</Header>
+        <Grid.Column>
+          <Form className='animated fadeInDown search' onSubmit={this.handleSearchGif.bind(this)}>
+            <Form.Field type="text" onChange={this.handleChange.bind(this)}>
+              <input placeholder='Search for a gif'/>
+            </Form.Field>
+            <Button color='teal' type='submit'>Search Gif</Button>
+          </Form>
+        </Grid.Column>
+      </Grid.Row>
+
     )
   }
 }

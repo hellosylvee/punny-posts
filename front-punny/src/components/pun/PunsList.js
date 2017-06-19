@@ -1,7 +1,7 @@
 import React from 'react'
 import PunBlock from './PunBlock'
 
-import { Grid } from 'semantic-ui-react'
+import { Grid, Header } from 'semantic-ui-react'
 
 const PunsList = (props) => {
   const revOrder = props.puns.slice(100).reverse()
@@ -21,10 +21,9 @@ const PunsList = (props) => {
     />
   ))
   return(
-    <Grid.Column>
-      <h2>All the Glorious Puns</h2>
+    <Grid.Row className='all-the-puns'>
       {allGP}
-    </Grid.Column>
+    </Grid.Row>
   )
 }
 

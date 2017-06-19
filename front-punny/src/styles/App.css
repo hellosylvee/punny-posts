@@ -1,3 +1,8 @@
+/*.grid {
+  border-color: solid black 2px;
+  width: 80%;
+}*/
+
 .pls {
   padding-left: 16px;
 }
@@ -12,6 +17,10 @@
 
 .mtl {
   margin-top: 36px;
+}
+
+.mbl {
+  margin-bottom: 36px;
 }
 
 .float-right {
@@ -29,7 +38,7 @@
 .ui.header.page-header {
   margin-bottom: 36px;
 }
-/*Todays Container > Todays Page*/
+
 .ui.segment.body-content {
   padding: 36px;
 }
@@ -37,19 +46,18 @@
 img.ui.large.rounded.image {
   margin:  0 auto;
 }
-.ui.card {
+
+.ui.card.animated.fadeIn {
   position: relative;
   float: left;
+  margin: 8px;
 }
 
-.pun-form {
-  width: 50%;
-  position: relative;
-  margin: 0 auto;
+.all-the-puns {
+  margin-left: 120px
 }
 
-/*.column.centralpunspage {
-  width: 99%;
-  position: relative;
+.ball-center {
+  display: block;
   margin: 0 auto;
-}*/
+}

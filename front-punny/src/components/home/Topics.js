@@ -1,39 +1,16 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import React from 'react'
+// import Topics from './Topics'
 
-const colors = [
-  'red', 'orange', 'yellow', 'olive', 'green', 'teal',
-  'blue', 'violet', 'purple', 'pink', 'brown', 'grey', 'black',
-]
+import { Grid, Header, Image } from 'semantic-ui-react'
 
-class Topics extends Component {
-  static propTypes = {
-    color: PropTypes.string,
-  }
+const TopicsList = () => {
+  const topics = ['dab', 'salt bae', 'puppies', 'fail', 'swirl', 'food', 'party', 'random']
 
-  state = { activeItem: 'home' }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { color } = this.props
-    const { activeItem } = this.state
-
-    return (
-      <Menu color={color} inverted widths={3}>
-        <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-        <Menu.Item name='messages' active={activeItem === 'messages'} onClick={this.handleItemClick} />
-        <Menu.Item name='friends' active={activeItem === 'friends'} onClick={this.handleItemClick} />
-      </Menu>
-    )
-  }
+  return(
+    <Grid.Column>
+      <Header as='h1'>Display Topics List</Header>
+    </Grid.Column>
+  )
 }
 
-const Topics = () => {
-  const menus = colors.map(color => <Topics color={color} key={color} />)
-
-  return <div>{menus}</div>
-}
-
-export default Topics
+export default TopicsList
