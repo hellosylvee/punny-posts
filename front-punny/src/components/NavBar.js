@@ -1,28 +1,50 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Route, Link, Switch } from 'react-router-dom'
 
-import { Menu } from 'semantic-ui-react'
+import Goodbye from './Goodbye'
+import { Menu, Image } from 'semantic-ui-react'
 
 export default class NavBar extends Component {
   state = {}
-
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+    let show_login = (
+      <Menu.Item as={Link} to='/login'
+        name='login'
+        active={activeItem === 'login'}
+        onClick={this.handleItemClick}
+        > Log In
+      </Menu.Item>
+    )
+
+    let show_logout = (
+      <Menu.Item as={Link} to='/login'
+        name='logout'
+        active={activeItem === 'logout'}
+        onClick={
+          () => localStorage.clear()
+        }
+        > Log Out
+      </Menu.Item>
+    )
+
+    let check_token = (localStorage.jwt) ? show_logout : show_login
+
     const { activeItem } = this.state
 
     return (
       <Menu stackable
         color='teal'
-        inverted widths={5}
+        inverted widths={6}
         className='animated fadeInDown'>
 
-        {/* <Menu.Item as={Link} to='/home'
+        <Menu.Item as={Link} to='/home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
         >
         <Image size='mini' src='/assets/images/beach-ball.png' /> Punny Posts
-        </Menu.Item> */}
+        </Menu.Item>
 
         <Menu.Item as={Link} to='/home'
           name='home'
@@ -52,12 +74,7 @@ export default class NavBar extends Component {
         > Profile
         </Menu.Item>
 
-        <Menu.Item as={Link} to='/login'
-          name='login'
-          active={activeItem === 'login'}
-          onClick={this.handleItemClick}
-        > Log In
-        </Menu.Item>
+        {check_token}
       </Menu>
     )
   }

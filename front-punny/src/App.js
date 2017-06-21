@@ -16,19 +16,20 @@ import axios from 'axios'
 import './styles/App.css';
 
 class App extends Component {
+
   handleLogin(params){
-    // debugger
-    console.log('params', params)
+    console.log('login params to backend', params)
     axios.post('http://localhost:3000/api/v1/auth', {
       username: params.username,
       password: params.password
     })
-    .then(res => {  //console.log('app', res.data)
-      const token = res.data.token
-      // console.log('store in localStorage: ', token)
-      localStorage.setItem('jwt', token)
-      setAuthorizationToken(token)
+    // .then(res => { console.log('what is this response? ', res) } )
+    .then(res => {
+      const account = res.data.account
       // debugger
+      localStorage.setItem('username', account.username)
+      localStorage.setItem('jwt', account.token)
+      setAuthorizationToken(account.token)
       this.props.history.push('/home')
     })
   }

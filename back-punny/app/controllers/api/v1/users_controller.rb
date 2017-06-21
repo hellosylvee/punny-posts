@@ -1,8 +1,8 @@
  class Api::V1::UsersController < ApplicationController
-  #  before_action :authorize_account!
+   before_action :authorize_account!
 
   def index
-    # authorize_account!
+    authorize_account!
     users = User.all
     render json: users
   end

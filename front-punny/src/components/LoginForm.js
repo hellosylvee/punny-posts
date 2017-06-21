@@ -20,7 +20,7 @@ class LoginForm extends Component {
 
   handleSubmit(e){
     e.preventDefault()
-    // console.log('hey! you are sending this to app.js')
+    console.log('hey! you are sending this to app.js')
     this.props.handleLogin(this.state)
   }
 
@@ -65,7 +65,7 @@ class LoginForm extends Component {
                 </Form.Field><br/>
                 <Button className='float-right' color='teal' animated='vertical'>
                   <Button.Content hidden>
-                    <Icon name='heart' /> Huzzah!
+                    <Icon name='birthday' /> Yay!
                   </Button.Content>
                   <Button.Content visible>
                     Log in now!

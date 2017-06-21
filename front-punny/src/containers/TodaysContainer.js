@@ -52,7 +52,7 @@ class TodayContainer extends Component {
   getTodaysDate(){
     var date = new Date().toJSON().slice(0,10).replace(/-/g,'/')
 
-    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${date}`)
+    axios.get(`http://localhost:3000/api/v1/puns/?date=${date}`)
     .then( res => this.setState({
       puns: res.data,
       date: date
@@ -65,7 +65,7 @@ class TodayContainer extends Component {
     var [yyyy, mm, dd] = curr
     let prevDay = yyyy + '/' + mm + '/' + (dd - 1)
 
-    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${prevDay}`)
+    axios.get(`http://localhost:3000/api/v1/puns/?date=${prevDay}`)
     .then( res => this.setState({
       puns: res.data,
       date: prevDay
@@ -80,7 +80,7 @@ class TodayContainer extends Component {
     var nn = nd.toString()
     let nextDay = yyyy + '/' + mm + '/' + nn
 
-    axios.get('http://localhost:3000/api/v1/puns/' + `?date=${nextDay}`)
+    axios.get(`http://localhost:3000/api/v1/puns/?date=${nextDay}`)
     .then( res => this.setState({
       puns: res.data,
       date: nextDay
