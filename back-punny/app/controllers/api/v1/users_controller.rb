@@ -7,11 +7,6 @@
     render json: users
   end
 
-  # def create
-  #   user = User.create(user_params)
-  #   render json: user
-  # end
-
   def create
     user = User.create(user_params)
     account = Account.new(username: params[:account][:username], password: params[:account][:password])

@@ -45,7 +45,12 @@ class App extends Component {
         last_name: params.last_name
       }
     })
-    .then(res => console.log('this is coming back from controller', res.data))
+    .then(res => {
+      const token = res.data.token
+      localStorage.setItem('jwt', token)
+      setAuthorizationToken(token)
+      this.props.history.push('/home')
+    })
   }
 
   render() {
