@@ -5,7 +5,7 @@ import CentralPunsPage from '../components/CentralPunsPage'
 import SearchGifForm from '../components/SearchGifForm'
 import SearchGifDisplay from '../components/SearchGifDisplay'
 
-import { Grid, Header } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 import axios from 'axios'
 

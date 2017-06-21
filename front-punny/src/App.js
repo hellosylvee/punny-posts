@@ -8,6 +8,7 @@ import ProfileContainer from './containers/ProfileContainer'
 
 import NavBar from './components/NavBar'
 import LoginForm from './components/LoginForm'
+import SignupForm from './components/SignupForm'
 
 import setAuthorizationToken from './components/auth/setAuthorizationToken'
 
@@ -18,8 +19,7 @@ class App extends Component {
   handleLogin(params){
     // debugger
     console.log('params', params)
-    let URL = 'http://localhost:3000/api/v1/auth'
-    axios.post(URL, {
+    axios.post('http://localhost:3000/api/v1/auth', {
       username: params.username,
       password: params.password
     })
@@ -29,8 +29,13 @@ class App extends Component {
       localStorage.setItem('jwt', token)
       setAuthorizationToken(token)
       // debugger
-      this.props.history.push('/puns')
+      this.props.history.push('/home')
     })
+  }
+
+  handleSignup(params){
+    console.log('signup', params)
+    axios.post('http://localhost:3000/api/v1/auth')
   }
 
   render() {
@@ -45,6 +50,9 @@ class App extends Component {
           <Route
             path='/login'
             render={() => <LoginForm handleLogin={this.handleLogin.bind(this)}/>} />
+          <Route
+            path='/signup'
+            render={() => <SignupForm handleSignup={this.handleSignup.bind(this)}/>} />
         </Switch>
       </div>
     );

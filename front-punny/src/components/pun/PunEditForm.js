@@ -18,7 +18,7 @@ class PunEditForm extends Component {
   handleUpdatePun(e){
     e.preventDefault()
     this.props.onUpdate(this.state.input, this.props.id)
-    this.setState({ input: '' })
+    // this.setState({ input: '' })
     this.props.history.push('/puns')
   }
 

@@ -42,7 +42,7 @@ class TodayContainer extends Component {
         img_url: this.state.gif.images.fixed_height_downsampled.url
        },
       pun: { pun: punInput },
-      user: { first_name: 'Meagan'}
+      user: { first_name: 'sylvee'}
     })
       .then( res => {
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )

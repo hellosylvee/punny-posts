@@ -12,10 +12,18 @@ export default class NavBar extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu
+      <Menu stackable
         color='teal'
         inverted widths={5}
         className='animated fadeInDown'>
+
+        {/* <Menu.Item as={Link} to='/home'
+          active={activeItem === 'home'}
+          onClick={this.handleItemClick}
+        >
+        <Image size='mini' src='/assets/images/beach-ball.png' /> Punny Posts
+        </Menu.Item> */}
+
         <Menu.Item as={Link} to='/home'
           name='home'
           active={activeItem === 'home'}

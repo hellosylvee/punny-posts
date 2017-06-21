@@ -27,6 +27,10 @@
   float: right;
 }
 
+.float-left {
+  float: left;
+}
+
 .ui.inverted.menu {
   margin-bottom: 48px;
 }
@@ -60,4 +64,8 @@ img.ui.large.rounded.image {
 .ball-center {
   display: block;
   margin: 0 auto;
+}
+
+.equal.width.fields.signup-form {
+  margin: 24px 0px;
 }

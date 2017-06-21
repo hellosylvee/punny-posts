@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom'
 
 import Welcome from '../components/home/Welcome'
-import Topics from '../components/home/Topics'
+import TrendingGifs from '../components/home/TrendingGifs'
+import TrendingPuns from '../components/home/TrendingPuns'
 
-import { Grid, Header, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 import axios from 'axios'
 
@@ -26,13 +26,10 @@ class HomeContainer extends Component {
 
   render(){
     return(
-      <Grid>
-        <Grid.Row centered columns={2} className='animated fadeInDown'>
-          <Welcome />
-        </Grid.Row>
-        <Grid.Row centered columns={2} className='animated fadeInDown'>
-          <Topics />
-        </Grid.Row>
+      <Grid columns='equal'>
+        <Welcome />
+        <TrendingGifs />
+        <TrendingPuns />
       </Grid>
     )
   }

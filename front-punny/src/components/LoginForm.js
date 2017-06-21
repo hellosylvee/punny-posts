@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Route, Link, Switch } from 'react-router-dom'
+
 import { Grid, Segment, Form, Header, Button, Icon, Image } from 'semantic-ui-react'
 
 class LoginForm extends Component {
@@ -24,14 +26,28 @@ class LoginForm extends Component {
 
   render(){
     console.log('sign in', this.state)
+
+    let signupbtn = (
+      <Switch>
+        <Route path='/signup' />
+        <Route path='/login' render={() => (
+          <Link to='/signup'>
+            <Button basic color='teal'>
+              Sign up!
+            </Button>
+          </Link>
+        )} />
+      </Switch>
+    )
+
     return(
       <Grid>
-        <Grid.Row centered columns={2} className='animated fadeInDown'>
+        <Grid.Row centered columns={3} className='animated fadeInDown'>
           <Image src='./assets/images/beach-ball.png' size='mini' className='animated infinite bounce ball-center'/>
           <Header as='h1' className='page-header'>Punny Posts</Header>
           <Grid.Column>
             <Segment className='body-content'>
-              <Header as='h4'>Don't be a stranger! Log in to add puns.</Header>
+              <Header as='h3'>Welcome back! Log in to share your puns.</Header>
               <Form onSubmit={this.handleSubmit.bind(this)}><br/>
                 <Form.Field>
                   <Header as='h3'>Username</Header>
@@ -47,9 +63,18 @@ class LoginForm extends Component {
                     value={this.state.password}
                     onChange={this.handleChange.bind(this, 'password')}/>
                 </Form.Field><br/>
-                <Button color='teal' type='submit'>
-                  Log In <Icon name='right chevron' />
+                <Button className='float-right' color='teal' animated='vertical'>
+                  <Button.Content hidden>
+                    <Icon name='heart' /> Huzzah!
+                  </Button.Content>
+                  <Button.Content visible>
+                    Log in now!
+                  </Button.Content>
                 </Button>
+                <div>
+                  <span className='prs'>New around here? </span>
+                  {signupbtn}
+                </div>
               </Form><br/>
             </Segment>
           </Grid.Column>

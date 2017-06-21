@@ -1,7 +1,7 @@
 import React from 'react'
 import PunBlock from './PunBlock'
 
-import { Grid, Header } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 const PunsList = (props) => {
   const revOrder = props.puns.slice(100).reverse()
