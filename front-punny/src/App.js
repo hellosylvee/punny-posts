@@ -23,9 +23,9 @@ class App extends Component {
       username: params.username,
       password: params.password
     })
-    // .then(res => { console.log('what is this response? ', res) } )
+    // .then(res => { console.log('what is this response? ', res.data) } )
     .then(res => {
-      const account = res.data.account
+      const account = res.data
       // debugger
       localStorage.setItem('username', account.username)
       localStorage.setItem('jwt', account.token)

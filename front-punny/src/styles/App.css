@@ -69,3 +69,9 @@ img.ui.large.rounded.image {
 .equal.width.fields.signup-form {
   margin: 24px 0px;
 }
+
+img.ui.mini.image.navbar-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}

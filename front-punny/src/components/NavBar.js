@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-import Goodbye from './Goodbye'
 import { Menu, Image } from 'semantic-ui-react'
 
 export default class NavBar extends Component {
@@ -9,48 +8,41 @@ export default class NavBar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
-    let show_login = (
-      <Menu.Item as={Link} to='/login'
-        name='login'
-        active={activeItem === 'login'}
-        onClick={this.handleItemClick}
-        > Log In
-      </Menu.Item>
-    )
-
-    let show_logout = (
-      <Menu.Item as={Link} to='/login'
-        name='logout'
-        active={activeItem === 'logout'}
-        onClick={
-          () => localStorage.clear()
-        }
-        > Log Out
-      </Menu.Item>
-    )
-
-    let check_token = (localStorage.jwt) ? show_logout : show_login
 
     const { activeItem } = this.state
+    let show_login = (
+      <Menu.Item as={Link} to='/login'
+      name='login'
+      active={activeItem === 'login'}
+      onClick={this.handleItemClick}
+      > Log In
+    </Menu.Item>
+  )
+
+  let show_logout = (
+    <Menu.Item as={Link} to='/login'
+    name='logout'
+    active={activeItem === 'logout'}
+    onClick={
+      () => localStorage.clear()
+    }
+      > Log Out
+    </Menu.Item>
+  )
+
+  let check_token = (localStorage.jwt) ? show_logout : show_login
 
     return (
       <Menu stackable
         color='teal'
-        inverted widths={6}
+        inverted widths={5}
         className='animated fadeInDown'>
 
         <Menu.Item as={Link} to='/home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
         >
-        <Image size='mini' src='/assets/images/beach-ball.png' /> Punny Posts
-        </Menu.Item>
-
-        <Menu.Item as={Link} to='/home'
-          name='home'
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
-        > Home
+        <Image className='navbar-icon' size='mini' src='/assets/images/navbar-icon.png' /> Punny Posts
         </Menu.Item>
 
         <Menu.Item as={Link} to='/puns'
