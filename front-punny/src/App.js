@@ -35,7 +35,17 @@ class App extends Component {
 
   handleSignup(params){
     console.log('signup', params)
-    axios.post('http://localhost:3000/api/v1/auth')
+    axios.post('http://localhost:3000/api/v1/users', {
+      account: {
+        username: params.username,
+        password: params.password
+      },
+      user: {
+        first_name: params.first_name,
+        last_name: params.last_name
+      }
+    })
+    .then(res => console.log('this is coming back from controller', res.data))
   }
 
   render() {

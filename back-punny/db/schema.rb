@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170618185537) do
+ActiveRecord::Schema.define(version: 20170621004352) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170618185537) do
     t.datetime "updated_at", null: false
     t.string "username"
     t.string "password_digest"
+    t.integer "user_id"
   end
 
   create_table "gifs", force: :cascade do |t|

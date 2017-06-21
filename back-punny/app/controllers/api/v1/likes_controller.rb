@@ -1,5 +1,4 @@
 class Api::V1::LikesController < ApplicationController
-  # before_action :num_of_likes!
 
   def index
     likes = Like.all
