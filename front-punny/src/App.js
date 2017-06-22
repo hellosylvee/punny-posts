@@ -46,12 +46,14 @@ class App extends Component {
         last_name: params.last_name
       }
     })
-    .then(res => {
-      const token = res.data.token
-      localStorage.setItem('jwt', token)
-      setAuthorizationToken(token)
-      this.props.history.push('/home')
-    })
+    .then(res => console.log('what is this?', res.data))
+    // .then(res => {
+    //   const account = res.data
+    //   localStorage.setItem('username', account.username)
+    //   localStorage.setItem('jwt', account.token)
+    //   setAuthorizationToken(account.token)
+    //   this.props.history.push('/home')
+    // })
   }
 
   render() {
