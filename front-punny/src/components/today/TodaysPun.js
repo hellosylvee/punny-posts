@@ -14,7 +14,7 @@ class TodaysPun extends Component {
   }
 
   render(){
-    console.log('This is one pun item!!!!!!!: ', this.state)
+    // console.log('This is one pun item!!!!!!!: ', this.state)
     let pun = this.state
     return(
       <Item className='animated fadeInDown'>

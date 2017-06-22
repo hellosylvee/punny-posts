@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, Image, Statistic } from 'semantic-ui-react'
+import { Icon, Image, Statistic, Grid } from 'semantic-ui-react'
 
 const UserPunStats = () => (
   <Statistic.Group widths='four' className='animated fadeInDown'>

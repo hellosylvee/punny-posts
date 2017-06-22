@@ -37,6 +37,7 @@ class PunContainer extends Component {
   }
 
   handleAddPun(punInput){
+    console.log('WHAT IS THIS? ', punInput)
     axios.post('http://localhost:3000/api/v1/puns', {
       gif: {
         url: this.state.random_gif.image_url,
@@ -48,6 +49,8 @@ class PunContainer extends Component {
     })
       .then( res => { console.log('container: ', res.data )
         this.setState( prevState => ({ puns: [...prevState.puns, res.data] }) )
+        this.props.history.push('/home')
+        this.props.history.push('/puns')
       })
 
   }
@@ -65,7 +68,8 @@ class PunContainer extends Component {
         }
       })
       this.setState({ puns: updatedPuns })
-      // this.props.history.push('/home')
+      this.props.history.push('/home')
+      this.props.history.push('/puns')
     })
     console.log('back to container: ', punUpdate)
   }
@@ -119,7 +123,8 @@ class PunContainer extends Component {
           onUpdate={this.handleUpdatePun.bind(this)}
           onDelete={this.handleDeletePun.bind(this)}
           addLike={this.handleAddLike.bind(this)}
-          puns={this.state.puns}/>
+          puns={this.state.puns}
+          current_user={this.state.current_user}/>
     </div>
     )
   }

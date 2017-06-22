@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import Welcome from '../components/home/Welcome'
-// import TrendingGifs from '../components/home/TrendingGifs'
-// import TrendingPuns from '../components/home/TrendingPuns'
+import TrendingGifs from '../components/home/TrendingGifs'
+import TrendingPuns from '../components/home/TrendingPuns'
 
 import { Grid } from 'semantic-ui-react'
 
@@ -28,8 +28,8 @@ class HomeContainer extends Component {
     return(
       <Grid columns='equal'>
         <Welcome />
-        {/* <TrendingGifs />
-        <TrendingPuns /> */}
+        <TrendingGifs />
+        <TrendingPuns />
       </Grid>
     )
   }

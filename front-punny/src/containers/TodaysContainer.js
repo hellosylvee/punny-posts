@@ -53,10 +53,11 @@ class TodayContainer extends Component {
     var date = new Date().toJSON().slice(0,10).replace(/-/g,'/')
 
     axios.get(`http://localhost:3000/api/v1/puns/?date=${date}`)
-    .then( res => this.setState({
-      puns: res.data,
-      date: date
-    }))
+    .then( res => console.log('res', res.data))
+    // .then( res => this.setState({
+    //   puns: res.data,
+    //   date: date
+    // }))
   }
 
   getPrevDate(){
