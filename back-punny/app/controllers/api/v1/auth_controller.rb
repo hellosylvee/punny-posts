@@ -4,7 +4,7 @@ class Api::V1::AuthController < ApplicationController
     if account.present? && account.authenticate(params[:password])
       token = JWT.encode({account_id: account.id}, ENV['JWT_SECRET'], ENV['JWT_ALGORITHM'])
       render json: {
-        account: { username: account.username },
+        account: account,
         token: token
       }
     else

@@ -1,5 +1,5 @@
  class Api::V1::UsersController < ApplicationController
-   before_action :authorize_account!
+   before_action :authorize_account!, only: [:index]
 
   def index
     authorize_account!
@@ -12,7 +12,11 @@
     account = Account.new(username: params[:account][:username], password: params[:account][:password])
     account.user_id = user.id
     account.save
-    render json: user
+    token = JWT.encode({user_id: user.id}, ENV['JWT_SECRET'], ENV['JWT_ALGORITHM'])
+    render json: {
+      user: user,
+      token: token
+    }
   end
 
   private

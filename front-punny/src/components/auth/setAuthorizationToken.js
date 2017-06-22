@@ -9,4 +9,8 @@ const setAuthorizationToken = (token) => {
   console.log('Authorization is SET')
 }
 
+// def authorized_request(url)
+//   // axios.get(url, {headers go here})
+// end
+
 export default setAuthorizationToken

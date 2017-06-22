@@ -14,6 +14,7 @@ class PunContainer extends Component {
     super()
     this.state = {
       query: '',
+      current_user: 0,
       random_gif: {}, //1 object
       puns: [] //array of objects
     }
@@ -29,6 +30,8 @@ class PunContainer extends Component {
   }
 
   handleSearchGif(query){
+    console.log('*********************');
+    console.log('handleSearchGif', this, query)
     axios.get(`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${query}`)
       .then( res => this.setState({ random_gif: res.data.data }))
   }
