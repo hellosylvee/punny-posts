@@ -4,7 +4,8 @@ import { List } from 'semantic-ui-react'
 
 
 const PunsTable = (props) => {
-  let pun = props.puns.map( p => (
+  const revOrder = props.puns.slice(120).reverse()
+  let pun = revOrder.map( p => (
       <List.Content>
         <Pun
           pun={p.pun}

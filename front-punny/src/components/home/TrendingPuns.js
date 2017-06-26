@@ -1,9 +1,8 @@
 import React from 'react'
 
-import { Grid, Card, Header, Image, Icon, Label } from 'semantic-ui-react'
+import { Grid, Card, Header, Image, Icon } from 'semantic-ui-react'
 
 const TrendingPuns = () => {
-  // const topics = ['dab', 'salt bae', 'puppies', 'fail', 'swirl', 'food', 'party', 'random']
 
   return(
     <Grid.Row centered columns={6} className='animated fadeInDown'>

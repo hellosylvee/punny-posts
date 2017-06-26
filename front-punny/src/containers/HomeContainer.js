@@ -30,6 +30,7 @@ class HomeContainer extends Component {
         <Welcome />
         <TrendingGifs />
         <TrendingPuns />
+        {/* <TrendingPuns /> */}
       </Grid>
     )
   }
